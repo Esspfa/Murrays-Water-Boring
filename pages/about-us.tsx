@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
-import Home from 'components/home';
+import About from 'components/about';
 
 const HomeManager: NextPage = () => {
-  return <Home />;
+  return <About />;
 };
 
 export default HomeManager;
