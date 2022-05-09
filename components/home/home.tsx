@@ -27,7 +27,9 @@ const home = () => {
             <div className="ml-40">
               <h3 className="text-white text-base leading-7">Call Us Now!</h3>
               <div className="flex">
-                <img src="/svg/phonecall.svg" alt="mm" className="bg-darkLight w-[25px] h-[25px] rounded-full" />
+                <div className="bg-darkLight rounded-full flex justify-center items-center w-9 h-9">
+                  <Image src="/svg/phonecall.svg" alt="phone-call" width={20} height={20} />
+                </div>
                 <p className="ml-3  text-white">03 5345 2175</p>
               </div>
               <div className="flex mt-2">
