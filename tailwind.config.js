@@ -9,7 +9,7 @@ module.exports = {
       ...defaultTheme.screens,
     },
     extend: {
-      colors: {},
+      colors: {darkBlue:'#033A90',darkLight:'#247CCA',darkBlue:'#033A90',Gray:'#666666'},
     },
   },
 };

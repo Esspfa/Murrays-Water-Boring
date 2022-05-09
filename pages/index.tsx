@@ -1,12 +1,13 @@
 import type { NextPage } from 'next';
 import PrimaryLayout from 'layout/primary-layout';
+import Home from 'components/home';
 
-const Home: NextPage = () => {
+const HomeManager: NextPage = () => {
   return (
     <PrimaryLayout>
-      <div className="">Home page</div>
+      <Home />
     </PrimaryLayout>
   );
 };
 
-export default Home;
+export default HomeManager;

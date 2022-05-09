@@ -18,9 +18,12 @@ const PrimaryLayout = ({ children, transparent }: Props) => {
         <title>Nextjs</title>
       </Head>
       <Header transparent={transparent} />
+      
       {children}
       {/* <Footer /> */}
+      <Footer/>
     </div>
+    
   );
 };
 
