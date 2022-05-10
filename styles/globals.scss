@@ -7,7 +7,7 @@ body {
   padding: 0;
   margin: 0;
   // background: #0c0820 !important;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   // height: 100vh;
   margin: auto;
   scroll-behavior: smooth;
@@ -33,7 +33,16 @@ a {
 p {
   @apply text-base;
 }
-.abc{
+.abc {
   background: #9ecae0;
   height: 400px;
+}
+
+input ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  @apply text-Gray;
+}
+
+.truck-image {
+  // transform: matrix(-1, 0, 0, 1, 0, 0);
 }
