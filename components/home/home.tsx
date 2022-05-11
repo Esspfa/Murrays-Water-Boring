@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import FindWater from './find-water';
 import Drilling from './drilling';
-import Cards from './cards';
+import Services from './services';
 import Button from 'components/common/button';
 import PhoneNumber from 'components/common/phone-number';
+import ServiceWater from 'components/common/service-water';
 const home = () => {
   return (
     <>
@@ -84,8 +84,11 @@ const home = () => {
         </div>
       </div>
       <Drilling />
-      <FindWater />
-      <Cards />
+      <ServiceWater
+        name="Find Water On Your Property"
+        paragraph="If you’re looking to tap into the potential your property has to offer, look no further than D. K. & E.M. Murray Water Boring. Call us today to get started with your drilling project."
+      />
+      <Services />
     </>
   );
 };

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Button from 'components/common/button';
-import Findwater from './findwater'
-import Servicewater from '../common/servicewater'
+import FindWater from './find-water';
+import ServiceWater from '../common/service-water';
 interface Props {
   image: string;
   header: string;
@@ -15,35 +15,31 @@ const findWater = [
     paragrp:
       'Yes we can. Here at D.K & E.M Murray we take pride in leaving minimal impact whilst on site whilst being environmentally friendly also.',
     location: 'Group13254.svg',
-    locationq:'Vector(4).svg',
+    locationq: 'Vector(4).svg',
   },
   {
     name: 'Will you find water on my property?',
     paragrp:
       'Yes we can. Here at D.K & E.M Murray we take pride in leaving minimal impact whilst on site whilst being environmentally friendly also.',
     location: 'Group13254.svg',
-    locationq:'Vector(4).svg',
+    locationq: 'Vector(4).svg',
   },
   {
     name: 'Will you find water on my property?',
     paragrp:
       'Yes we can. Here at D.K & E.M Murray we take pride in leaving minimal impact whilst on site whilst being environmentally friendly also.',
     location: 'Group13254.svg',
-    locationq:'Vector(4).svg',
+    locationq: 'Vector(4).svg',
   },
   {
     name: 'Will you find water on my property?',
     paragrp:
       'Yes we can. Here at D.K & E.M Murray we take pride in leaving minimal impact whilst on site whilst being environmentally friendly also.',
     location: 'Group13254.svg',
-    locationq:'Vector(4).svg',
+    locationq: 'Vector(4).svg',
   },
 ];
-const nervicewater =[{
-  name:"Get Started On Accessing Your Underground Water Today",
-  pragraph:"Improve irrigation for livestock or gardening and save money by drilling a water bore on your property. Call us today to schedule an appointment for an on-site inspection. "
-},
-]
+
 const Faqs = (props: Props) => {
   const [isDown, setIsDown] = useState(false);
   return (
@@ -75,22 +71,20 @@ const Faqs = (props: Props) => {
         <div className="text-center text-darkBlue font-extrabold  font-Montserrat text-4xl ">
           <h1>FAQ</h1>
         </div>
-       
-          <div className='grid  grid-cols-2'>
+
+        <div className="grid  grid-cols-2">
           {findWater.map((data: any, index) => (
             <div className="w-full mt-3" key={index}>
-              <Findwater item={data} />
+              <FindWater item={data} />
             </div>
           ))}
-          </div>     
+        </div>
       </div>
-          {nervicewater.map((data: any, index) => (
-            <div key={index}>
-              <Servicewater item={data} />
-            </div>
-          ))}
-          </div>
-  
+      <ServiceWater
+        paragraph="Improve irrigation for livestock or gardening and save money by drilling a water bore on your property. Call us today to schedule an appointment for an on-site inspection. "
+        name="Get Started On Accessing Your Underground Water Today"
+      />
+    </div>
   );
 };
 
