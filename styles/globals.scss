@@ -37,3 +37,19 @@ p {
   background: #9ecae0;
   height: 400px;
 }
+.drop-down {
+  min-height: 0;
+  opacity: 10;
+ transition-property: min-height;
+ transition-duration: 2s;
+ transition-timing-function: linear;
+ transition-delay: 2s;
+  &.open {
+    min-height: min-content;
+    opacity: 1;
+transition-property: min-height;
+ transition-duration: 2s;
+ transition-timing-function: linear;
+ transition-delay: 2s;
+}
+}

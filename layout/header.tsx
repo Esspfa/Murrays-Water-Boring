@@ -5,7 +5,7 @@ const header = () => {
   return (
     <>
       <div className=" bg-darkBlue sm:w-full lg:w-full ">
-        <ul className="flex space-x-3 mt-2  sm:ml-auto lg:ml-40 ml-8">
+        <ul className="flex space-x-3 mt-2  sm:ml-auto lg:ml-40 ">
           <li>
             <img src="/svg/Group 1162.svg" alt="ll" className="h-6 my-3" />
           </li>
