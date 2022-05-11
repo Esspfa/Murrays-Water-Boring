@@ -5,6 +5,29 @@ import Drilling from './drilling';
 import Cards from './cards';
 import Button from 'components/common/button';
 import PhoneNumber from 'components/common/phone-number';
+import InputType from 'components/common/inputtype';
+const inputtype =[
+  {
+  type:"text",
+  name:"name",
+  placeholder:"*name"
+},
+{
+  type:"email",
+  name:"email",
+  placeholder:"*Email"
+},
+{
+  type:"cell",
+  name:"phone",
+  placeholder:"*+92"
+},
+{
+  type:"text",
+  name:"commit",
+  placeholder:"*Comment"
+},
+]
 const home = () => {
   return (
     <>
@@ -48,15 +71,11 @@ const home = () => {
                 <h1 className="text-black font-bold font-Montserrat ml-5">We Offer Free On-Site Inspections</h1>
               </div>
               <div className="flex items-center space-x-3 mt-1">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Name*"
-                  className="rounded-full font-thin w-52 h-10  px-5 text-Gray"
-                />
-                {/* <input type="email" name="name" placeholder="Email*" className="rounded-full w-[20%] h-10  px-5" />
-                <input type="number" name="phone" placeholder="Phone*" className="rounded-full w-[20%] h-10  px-5" />
-                <input type="text" name="name" placeholder="Massage*" className="rounded-full w-[20%] h-10  px-5" /> */}
+              {inputtype.map((data: any, index) => (
+            <div key={index}>
+              <InputType  item={data} />
+            </div>
+          ))}
                 <Button>Send</Button>
               </div>
             </div>
