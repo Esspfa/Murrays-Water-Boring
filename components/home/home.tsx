@@ -3,81 +3,89 @@ import Image from 'next/image';
 import FindWater from './find-water';
 import Drilling from './drilling';
 import Cards from './cards';
+import Button from 'components/common/button';
+import PhoneNumber from 'components/common/phone-number';
 const home = () => {
   return (
     <>
       <div className="main bg-darkLight">
-        <div className="flex justify-end  h-1/4">
-          <div className="lg:mt-20 lg:ml-2 sm:mt-5 sm:-ml-5">
-            <img src="/svg/image 4 (Traced).svg" alt="jj" className="ml-20" />
-            <div className="text-6xl  text-white font-bold ml-40 ">
-              <h3>Your Water</h3>
-              <h3>Boring</h3>
-              <h3>Experts</h3>
+        <div className="flex flex-wrap justify-between">
+          <div className="ml-32 mt-10">
+            <img src="/svg/image 4 (Traced).svg" alt="jj" className="-ml-20" />
+            <div className="text-6xl  text-white font-bold ">
+              <h3>
+                Your Water <br />
+                Boring <br />
+                Experts
+              </h3>
               <h3 className="mt-4 text-2xl text-white ">Water Boring in Victoria</h3>
             </div>
-            <h3 className="mt-4 rounded-xl bg-darkBlue text-center w-4/6 h-8 py-1 text-white ml-32 sm:-mt-3">
-              Schedule A Free Onsite Inspection
-            </h3>
+            <Button classes="bg-darkBlue">Schedule A Free Onsite Inspection</Button>
           </div>
-          <Image src="/img/Group 1168.png" alt="dd" width="800px" height="500px" />
+          <Image src="/img/Group 1168.png" alt="truck" width="800px" height="500px" />
         </div>
-        <div className="main lg:-mt-5 sm:mt-auto flex sm:flex-nowrap flex-wrap">
-          <div className="bg-darkBlue lg:w-1/3 sm:w-full items-center">
-            <div className="ml-40">
-              <h3 className="text-white text-base leading-7">Call Us Now!</h3>
-              <div className="flex">
-                <div className="bg-darkLight rounded-full flex justify-center items-center w-9 h-9">
-                  <Image src="/svg/phonecall.svg" alt="phone-call" width={20} height={20} />
-                </div>
-                <p className="ml-3  text-white">03 5345 2175</p>
-              </div>
-              <div className="flex mt-2">
-                <img src="/svg/phonecall.svg" alt="mm" className="bg-darkLight w-[25px] h-[25px] rounded-full" />
-                <p className="ml-3  text-white">03 5345 2175</p>
+        <div className="main sm:-mt-7 h-32 flex sm:flex-nowrap flex-wrap">
+          <div
+            className="items-center w-96 z-10"
+            style={{
+              background: `url(/img/blue-ribbon.png)`,
+              backgroundSize: '100% 100%, cover',
+              backgroundRepeat: 'no-repeat',
+              // backgroundOrigin: 'content-box',
+            }}
+          >
+            <div className="flex flex-col h-full justify-center items-end mr-8">
+              <div>
+                <h3 className="text-white text-lg leading-7 font-medium mb-2">Call Us Now!</h3>
+                <PhoneNumber />
+                <PhoneNumber />
               </div>
             </div>
           </div>
-          <div className="bg-yellow-400 w-full">
-            <div className='mx-10'>
-           <div className='mt-4'>
-           <h1 className="text-black font-bold font-Montserrat ml-5">We Offer Free On-Site Inspections</h1>
-           </div>
-            <div className=" flex space-x-3 mt-1">
-              <input type="text" name="name" placeholder="Name*" className="rounded-full w-[20%] h-10  px-5" />
-              <input type="email" name="name" placeholder="Email*" className="rounded-full w-[20%] h-10  px-5" />
-              <input type="number" name="phone" placeholder="Phone*" className="rounded-full w-[20%] h-10  px-5" />
-              <input type="text" name="name" placeholder="Massage*" className="rounded-full w-[20%] h-10  px-5" />
-              <button className='bg-darkLight rounded-full w-32 text-white'>Send</button>
-            </div>
-            
+          <div className="bg-yellow-400 w-full -ml-8">
+            <div className="mx-10">
+              <div className="mt-4">
+                <h1 className="text-black font-bold font-Montserrat ml-5">We Offer Free On-Site Inspections</h1>
+              </div>
+              <div className="flex items-center space-x-3 mt-1">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name*"
+                  className="rounded-full font-thin w-52 h-10  px-5 text-Gray"
+                />
+                {/* <input type="email" name="name" placeholder="Email*" className="rounded-full w-[20%] h-10  px-5" />
+                <input type="number" name="phone" placeholder="Phone*" className="rounded-full w-[20%] h-10  px-5" />
+                <input type="text" name="name" placeholder="Massage*" className="rounded-full w-[20%] h-10  px-5" /> */}
+                <Button>Send</Button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex mx-40 mt-10">
+      <div className="flex items-center mx-40 mt-10">
         <Image src="/img/about.png" alt="about" width="696px" height="500px" />
-        <div className="ml-10 w-[50%]">
-          <h1 className="text-darkBlue font-extrabold text-2xl">About Us</h1>
-          <p className="text-Gray text-xs mt-[30px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quasi aliquid aperiam a quis doloremque
-            voluptas, illum temporibus error quam cumque distinctio quisquam eos, hic explicabo quaerat dolore.
-            Sapiente, nihil? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil illum maxime reprehenderit
-            eligendi voluptates corporis voluptatem reiciendis, repellat nobis porro facere deserunt consequatur.
-            Accusamus vel similique facilis atque explicabo ratione
+        <div className="ml-10 max-w-xl">
+          <h1 className="text-darkBlue font-extrabold text-3xl font-montserrat">About Us</h1>
+          <p className="text-Gray text-sm font-regular mt-[30px]">
+            We began trading as D.K. & E.M. Murray and were founded by Des who has over 50 years of experience dating
+            back to the 1960s. Murray&apos;s Water Boring is the longest-established family drilling business in the
+            area, servicing most areas around Victoria. The company now has over 90 years of combined experience
+            spanning over three generations from Des to his son, Gary, and two of his grandsons, Josh and Brad, who all
+            work in the business with Gary holding a class 3 license which is the highest qualification.
           </p>
-          <p className="text-Gray text-xs mt-[20px]">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nam minima autem aliquid obcaecati
-            reiciendis voluptatum rerum delectus, animi, ipsa pariatur nemo error molestias laudantium provident fugit
-            praesentium maxime dignissimos.
+          <p className="text-Gray text-sm font-regular mt-[20px]">
+            If you need water for your garden, stock, irrigation, test holes or mining and exploration drilling, we are
+            the people to call. We are founders of the ‘no water, no charge’ offer, which we still offer on domestic and
+            stock bores after our free site inspection of your property. We offer reliable service with competitive
+            prices using the most modern drilling rigs in Victoria.
           </p>
-          <button className="bg-darkLight rounded-full w-[20%] h-[35px] text-white mt-4">Read More</button>
+          <Button classes="mt-4">Read more</Button>
         </div>
       </div>
       <Drilling />
       <FindWater />
       <Cards />
-      
     </>
   );
 };
