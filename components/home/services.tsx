@@ -11,8 +11,19 @@ const Cards = () => {
           title="Some of Our Services Include..."
           paragraphs="We’re water boring specialists and provide a range of services for domestic and farm use as well as irrigation purposes."
         />
-        <Card />
-        <Card />
+        <Card
+        image='/img/Rectangle34(2).png'
+          title="Irrigation Holes"
+          paragraphs="Provide your farm or property with the irrigation it requires to sustain livestock and for anything else you may need."
+          endText="More Info"
+        />
+        <Card
+        image="/img/Rectangle34(1).png"
+          title="Exploration Drilling"
+          paragraphs="We specialise in mineral exploration boring for various businesses. You can trust our reliable team to get the job done right."
+          endText="Learn More"
+        />
+        
       </div>
     </div>
   );

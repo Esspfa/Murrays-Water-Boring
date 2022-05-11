@@ -4,8 +4,8 @@ import Drilling from './drilling';
 import Services from './services';
 import Button from 'components/common/button';
 import PhoneNumber from 'components/common/phone-number';
-<<<<<<< HEAD
 import InputType from 'components/common/inputtype';
+import ServiceWater from 'components/common/service-water';
 const inputtype =[
   {
   type:"text",
@@ -28,9 +28,6 @@ const inputtype =[
   placeholder:"*Comment"
 },
 ]
-=======
-import ServiceWater from 'components/common/service-water';
->>>>>>> 01a9fb8c3c33efd37e0bfffc3aefea0c902b8041
 const home = () => {
   return (
     <>
