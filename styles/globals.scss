@@ -34,24 +34,54 @@ p {
   @apply text-base;
 }
 .background {
-  background: #9ecae0;
-
+  background: linear-gradient(
+    90deg,
+    #75bcdd 0%,
+    #5aadd3 2.94%,
+    #3c9fc9 6.54%,
+    #2b97c3 9.01%,
+    #1e90bd 11.87%,
+    #1a8fbd 15.75%,
+    #1f90be 20.11%,
+    #2794c1 23.66%,
+    #3299c5 26.52%,
+    #3a9fc8 28.9%,
+    #47a4ce 32.43%,
+    #5cafd7 36.93%,
+    #6bb8dd 41.07%,
+    #6ab9de 44.32%,
+    #6ab9de 50.23%,
+    #66b7dd 54.67%,
+    #6dbadf 57.54%,
+    #71bde0 60.79%,
+    #75bde0 65.89%,
+    #70bce1 67.85%,
+    #6ebadf 75.45%,
+    #6cbadf 80.63%,
+    #6cb9df 85.54%,
+    #6cb9df 88.09%,
+    #68b6dc 89.83%,
+    #61b2d9 91.79%,
+    #59aed5 93.73%,
+    #50a9d2 95.64%,
+    #3c9eca 100%
+  );
 }
 .drop-down {
   min-height: 0;
   opacity: 10;
- transition-property: min-height;
- transition-duration: 2s;
- transition-timing-function: linear;
- transition-delay: 2s;
+  transition-property: min-height;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 2s;
   &.open {
     min-height: min-content;
     opacity: 1;
-transition-property: min-height;
- transition-duration: 2s;
- transition-timing-function: linear;
- transition-delay: 2s;
-}
+    transition-property: min-height;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 2s;
+  }
 }
 
 input ::placeholder {
@@ -61,4 +91,9 @@ input ::placeholder {
 
 .truck-image {
   // transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.card-border {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 }

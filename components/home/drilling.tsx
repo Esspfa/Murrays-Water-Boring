@@ -6,11 +6,11 @@ const Drilling = () => {
       <img src="/img/water-layer (2).png" alt="textcarsve" className="w-full" />
       <div
         className="flex justify-between -mt-12 h-[525px] z-10"
-        // style={{
-        //   background: `url(/img/bg-blue-curve.png)`,
-        //   backgroundSize: '100% 100%, cover',
-        //   backgroundRepeat: 'no-repeat',
-        // }}
+        style={{
+          background: `url(/img/bg-blue-curve.png)`,
+          backgroundSize: '100% 100%, cover',
+          backgroundRepeat: 'no-repeat',
+        }}
       >
         <img src="/img/bg-blue-curve.png" alt="textcarsve" className="w-full absolute h-[525px]" />
         <div className="text-center flex flex-col justify-center items-center  text-white max-w-xl ml-4 z-10">
@@ -34,7 +34,7 @@ const Drilling = () => {
             you get it done right the first time and give us a call.
           </p>
         </div>
-        <img src="/img/image6.png" alt="image6" className="z-10 truck-image -mt-2" />
+        {/* <img src="/img/image6.png" alt="image6" className="z-10 truck-image" /> */}
       </div>
     </div>
   );
