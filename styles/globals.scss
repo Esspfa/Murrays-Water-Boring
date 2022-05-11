@@ -33,11 +33,10 @@ a {
 p {
   @apply text-base;
 }
-.abc {
+.background {
   background: #9ecae0;
-  height: 400px;
+
 }
-<<<<<<< HEAD
 .drop-down {
   min-height: 0;
   opacity: 10;
@@ -54,7 +53,6 @@ transition-property: min-height;
  transition-delay: 2s;
 }
 }
-=======
 
 input ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -64,4 +62,3 @@ input ::placeholder {
 .truck-image {
   // transform: matrix(-1, 0, 0, 1, 0, 0);
 }
->>>>>>> bace694c41263e1f52b28692039577059ab38af6

@@ -4,7 +4,7 @@ const FindWater = () => {
   return (
     <div className="mt-10  ">
       <div>
-        <img src="/img/footer-above.png" alt="m" className='w-full z-10' /></div>
+      <img src="/img/footer-above.png" alt="m" className='w-full z-10' /></div>
       <div className=" top-0 z-50 text-center text-white">
         <div className='abc relative -top-32 -z-10'>
           <div className=' pt-20'>

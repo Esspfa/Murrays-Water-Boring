@@ -1,14 +1,51 @@
-import React,{useState} from 'react'
-import Image from 'next/image'
+import React, { useState } from 'react';
+import Image from 'next/image';
+import Button from 'components/common/button';
+import Findwater from './findwater'
+import Servicewater from '../common/servicewater'
 interface Props {
-    image: string;
-    header: string;
-    content: string;
-    image2:string;
-  }
+  image: string;
+  header: string;
+  content: string;
+  image2: string;
+}
+const findWater = [
+  {
+    name: 'Will you find water on my property?',
+    paragrp:
+      'Yes we can. Here at D.K & E.M Murray we take pride in leaving minimal impact whilst on site whilst being environmentally friendly also.',
+    location: 'Group13254.svg',
+    locationq:'Vector(4).svg',
+  },
+  {
+    name: 'Will you find water on my property?',
+    paragrp:
+      'Yes we can. Here at D.K & E.M Murray we take pride in leaving minimal impact whilst on site whilst being environmentally friendly also.',
+    location: 'Group13254.svg',
+    locationq:'Vector(4).svg',
+  },
+  {
+    name: 'Will you find water on my property?',
+    paragrp:
+      'Yes we can. Here at D.K & E.M Murray we take pride in leaving minimal impact whilst on site whilst being environmentally friendly also.',
+    location: 'Group13254.svg',
+    locationq:'Vector(4).svg',
+  },
+  {
+    name: 'Will you find water on my property?',
+    paragrp:
+      'Yes we can. Here at D.K & E.M Murray we take pride in leaving minimal impact whilst on site whilst being environmentally friendly also.',
+    location: 'Group13254.svg',
+    locationq:'Vector(4).svg',
+  },
+];
+const nervicewater =[{
+  name:"Get Started On Accessing Your Underground Water Today",
+  pragraph:"Improve irrigation for livestock or gardening and save money by drilling a water bore on your property. Call us today to schedule an appointment for an on-site inspection. "
+},
+]
 const Faqs = (props: Props) => {
-    const { header, image, content, image2} = props;
-    const [isDown, setIsDown] = useState(false);
+  const [isDown, setIsDown] = useState(false);
   return (
     <div>
       <div className="flex">
@@ -34,27 +71,27 @@ const Faqs = (props: Props) => {
           <h1 className="ml-5 text-darkLight">FAQs</h1>
         </div>
       </div>
-      <div className='lg:mx-52'>
-        <div  className='text-center text-darkBlue font-extrabold  font-Montserrat text-4xl '>
-        <h1>FAQ</h1>
+      <div className="lg:mx-52">
+        <div className="text-center text-darkBlue font-extrabold  font-Montserrat text-4xl ">
+          <h1>FAQ</h1>
         </div>
-        <div className='flex'>
-            <div className='border border-gray-400 flex justify-between items-center w-1/2 cursor-pointer ' onClick={() => {
-          setIsDown(!isDown);
-        }}
-      >     
-            <h1>Will you find water on my property?</h1>
-                    <img src={`/svg/${isDown ? 'Vector(4).svg' : 'Vector(4).svg'}`} alt='Vector(4)' className='w-4 h-3 rotate-90 flex items-end content-end ' /> 
-            </div> 
-        </div>
-        <div className={`drop-down${isDown && 'open'} `}>
-        {isDown && <p className="border border-gray-400 w-1/2">Yes we can. Here at D.K & E.M Murray we take pride in leaving minimal impact whilst on site whilst
-         being environmentally friendly also.</p>}
+       
+          <div className='grid  grid-cols-2'>
+          {findWater.map((data: any, index) => (
+            <div className="w-full mt-3" key={index}>
+              <Findwater item={data} />
+            </div>
+          ))}
+          </div>     
       </div>
-      </div>
-      
-    </div>
+          {nervicewater.map((data: any, index) => (
+            <div key={index}>
+              <Servicewater item={data} />
+            </div>
+          ))}
+          </div>
+  
   );
-}
+};
 
-export default Faqs
+export default Faqs;
