@@ -6,32 +6,33 @@ import Button from 'components/common/button';
 import PhoneNumber from 'components/common/phone-number';
 import InputType from 'components/common/inputtype';
 import ServiceWater from 'components/common/service-water';
-const inputtype =[
+import AboutPart from 'components/common/about-part';
+const inputtype = [
   {
-  type:"text",
-  name:"name",
-  placeholder:"*name"
-},
-{
-  type:"email",
-  name:"email",
-  placeholder:"*Email"
-},
-{
-  type:"cell",
-  name:"phone",
-  placeholder:"*+92"
-},
-{
-  type:"text",
-  name:"commit",
-  placeholder:"*Comment"
-},
-]
+    type: 'text',
+    name: 'name',
+    placeholder: '*name',
+  },
+  {
+    type: 'email',
+    name: 'email',
+    placeholder: '*Email',
+  },
+  {
+    type: 'cell',
+    name: 'phone',
+    placeholder: '*+92',
+  },
+  {
+    type: 'text',
+    name: 'commit',
+    placeholder: '*Comment',
+  },
+];
 const home = () => {
   return (
     <>
-      <div className="main bg-darkLight">
+      <div className="main bg-lightBlue">
         <div className="flex flex-wrap justify-between">
           <div className="ml-32 mt-10">
             <img src="/svg/image 4 (Traced).svg" alt="jj" className="-ml-20" />
@@ -71,43 +72,23 @@ const home = () => {
                 <h1 className="text-black font-bold font-Montserrat ml-5">We Offer Free On-Site Inspections</h1>
               </div>
               <div className="flex items-center space-x-3 mt-1">
-              {inputtype.map((data: any, index) => (
-            <div key={index}>
-              <InputType  item={data} />
-            </div>
-          ))}
+                {inputtype.map((data: any, index) => (
+                  <div key={index}>
+                    <InputType item={data} />
+                  </div>
+                ))}
                 <Button>Send</Button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex items-center  mt-10">
-      <img src="/img/about.png" alt="about" className='w-full hidden sm:block' />
-        <div className="ml-10 max-w-xl">
-        <img src="/img/about.png" alt="about" className='w-full sm:hidden block' />
-          <h1 className="text-darkBlue font-extrabold text-3xl font-montserrat">About Us</h1>
-          <p className="text-Gray text-sm font-regular">
-            We began trading as D.K. & E.M. Murray and were founded by Des who has over 50 years of experience dating
-            back to the 1960s. Murray&apos;s Water Boring is the longest-established family drilling business in the
-            area, servicing most areas around Victoria. The company now has over 90 years of combined experience
-            spanning over three generations from Des to his son, Gary, and two of his grandsons, Josh and Brad, who all
-            work in the business with Gary holding a class 3 license which is the highest qualification.
-          </p>
-          <p className="text-Gray text-sm font-regular mt-[20px]">
-            If you need water for your garden, stock, irrigation, test holes or mining and exploration drilling, we are
-            the people to call. We are founders of the ‘no water, no charge’ offer, which we still offer on domestic and
-            stock bores after our free site inspection of your property. We offer reliable service with competitive
-            prices using the most modern drilling rigs in Victoria.
-          </p>
-          <Button classes="mt-4">Read more</Button>
-        </div>
-      </div>
+      <AboutPart />
       <Drilling />
       <ServiceWater
         name="Find Water On Your Property"
         paragraph="If you’re looking to tap into the potential your property has to offer, look no further than D. K. & E.M. Murray Water Boring. Call us today to get started with your drilling project."
-        text='Get Started'
+        text="Get Started"
       />
       <Services />
     </>

@@ -1,10 +1,10 @@
-import React from 'react'
-import Image from 'next/image'
-import Button from 'components/common/button'
+import React from 'react';
+import Image from 'next/image';
+import Button from 'components/common/button';
 const contact = () => {
   return (
     <div>
-       <div className="bg-darkLight w-full lg:flex">
+      <div className="bg-lightBlue w-full lg:flex">
         <div className="">
           <div className="px-4 sm:text-center justify-center">
             <h1 className="text-white font-black lg:text-5xl font-montserrat ">EXPERTISE YOU CAN TRUST</h1>
@@ -22,16 +22,16 @@ const contact = () => {
           <div className="ml-2">
             <Image src="/svg/Vector(4).svg" width="10px" height="10px" alt="Vector(4)" />
           </div>
-          <h1 className="ml-5 text-darkLight">Contact Us</h1>
+          <h1 className="ml-5 text-lightBlue">Contact Us</h1>
         </div>
       </div>
-      <div className='container mx-auto'>
+      <div className="container mx-auto">
         <div>
           <h1>gf</h1>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default contact
+export default contact;

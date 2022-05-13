@@ -16,7 +16,7 @@ const Card = (props: Props) => {
       <div className="rounded-none bg-white px-4 py-3 w-11/12 ml-auto -mt-5 z-10 card-border">
         <h1 className="font-bold font-montserrat">{title}</h1>
         <p className="text-base text-Gray font-normal">{paragraphs}</p>
-        <div className="mt-2 text-darkLight font-medium">
+        <div className="mt-2 text-lightBlue font-medium">
           {endText}
           <Image src="/svg/arrow.svg" width="20px" height="10px" alt="arrow" />
         </div>

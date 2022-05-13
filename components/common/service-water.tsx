@@ -3,10 +3,10 @@ import Button from './button';
 interface Props {
   name: string;
   paragraph: string;
-  text?:string;
+  text?: string;
 }
 const ServiceWater = (props: Props) => {
-  const { name, paragraph,text } = props;
+  const { name, paragraph, text } = props;
   return (
     <div>
       <img src="/img/footer-above.png" alt="m" className="w-full z-10" />
@@ -15,7 +15,7 @@ const ServiceWater = (props: Props) => {
           <h1 className="font-montserrat font-extrabold text-lg sm:text-2xl leading-10">{name}</h1>
           <p className="font-bold">{paragraph}</p>
           <div className="py-7">
-            <Button classes="bg-white text-darkLight">{text}</Button>
+            <Button classes="bg-white text-lightBlue">{text}</Button>
           </div>
         </div>
       </div>
