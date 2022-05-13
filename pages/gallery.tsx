@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
-import About from 'components/about/about';
+import Gallery from 'components/gallery';
 
 const HomeManager: NextPage = () => {
-  return <About/>;
+  return <Gallery/>;
 };
 
 export default HomeManager;

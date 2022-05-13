@@ -8,8 +8,10 @@ const Cards = () => {
       <h1 className="text-center font-extrabold text-darkBlue text-3xl ">Some Of Our Services Include..</h1>
       <div className="grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 lg:mx-40 mt-5 gap-5">
         <Card
+        image="/img/card1.png"
           title="Some of Our Services Include..."
           paragraphs="We’re water boring specialists and provide a range of services for domestic and farm use as well as irrigation purposes."
+          endText='Find Out More'
         />
         <Card
         image='/img/Rectangle34(2).png'

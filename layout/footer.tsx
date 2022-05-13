@@ -66,21 +66,19 @@ location:"/svg/phonecall.svg"
 const Footer = () => {
   return (
     <div className="footer w-full bg-darkBlue mt-5 ">
-      <div className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-7  text-center pt-24 pb-16 pl-5 pr-5 md:pl-20 md:pr-20">
-        <div className="text-center flex items-center">
-          <Image
-            width="200px"
-            height="100px"
-            className="cursor-pointer"
-            src="/svg/image 2 (1).svg"
-            alt="logo"
-            quality={100}
-          />
+      <div className="grid sm:grid-cols-3 md:grid-cols-7 lg:grid-cols-7 text-center pt-24 pb-16 pl-5 pr-5 md:pl-20 md:pr-20">
+      <div>
+        <div>
+        <img src="/svg/image 2 (1).svg" alt="image 2 (1) sm:w-full " />
+        <h1 className='text-white lg:hidden md:hidden'>We Do Not Guarantee The Quality or Quantity of Water</h1>
         </div>
-        <div className="flex items-center">
-          <hr className="border-dotted  rotate-90 w-full " />
+        <hr  className='lg:hidden sm:hidden'/>
+      </div>
+      <div className="flex items-center">
+          <hr className="border-dotted  rotate-90 w-full hidden sm:block " />
         </div>
-        <div className="text-left  pt-5 md:pt-0">
+      <div>
+      <div className="text-left  pt-5 md:pt-0">
           <Link href="/">
             <a>
               <p className="font-bold text-lg text-white">Get In Touch</p>
@@ -98,10 +96,12 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="flex items-center">
-          <hr className="border-dotted  rotate-90 w-full " />
+      </div>
+      <div className="flex items-center">
+          <hr className="border-dotted  rotate-90 w-full hidden sm:block  " />
         </div>
-        <div className="text-left  pt-5 md:pt-0">
+      <div>
+      <div className="text-left  pt-5 md:pt-0">
           <Link href="/">
             <a>
               <p className="font-bold text-lg text-white">Get In Touch</p>
@@ -120,11 +120,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
-        <div className="flex items-center">
-          <hr className="border-dotted  rotate-90 w-full " />
+      </div>
+      <div className="flex items-center">
+          <hr className="border-dotted  rotate-90 w-full hidden sm:block " />
         </div>
-        <div className="text-left space-y-4 pt-5 md:pt-0">
+      <div>
+      <div className="text-left space-y-4 pt-5 md:pt-0">
           <p className="font-bold text-lg text-white">Connect With Us</p>
           <div className="flex">
             <div className="mr-3">
@@ -155,11 +156,6 @@ const Footer = () => {
              </div>
         </div>
       </div>
-
-      <hr className="border-dotted  mx-40   w-3/4 bg-red-800" />
-      <div className='mx-40 flex'>
-        <h1 className='text-white'>We Do Not Guarantee The Quality or Quantity of Water</h1>
-        <h1 className='text-white ml-auto'>Privacy Policy</h1>
       </div>
       <div className="flex justify-center items-center border-t-2 border-white p-6 bg-white">
         <p className="text-center text-xs font-Manrope">© 2022 West End Support Services. All Rights Reserved</p>

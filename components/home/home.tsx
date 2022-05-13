@@ -82,11 +82,12 @@ const home = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center mx-40 mt-10">
-        <Image src="/img/about.png" alt="about" width="696px" height="500px" />
+      <div className="flex items-center  mt-10">
+      <img src="/img/about.png" alt="about" className='w-full hidden sm:block' />
         <div className="ml-10 max-w-xl">
+        <img src="/img/about.png" alt="about" className='w-full sm:hidden block' />
           <h1 className="text-darkBlue font-extrabold text-3xl font-montserrat">About Us</h1>
-          <p className="text-Gray text-sm font-regular mt-[30px]">
+          <p className="text-Gray text-sm font-regular">
             We began trading as D.K. & E.M. Murray and were founded by Des who has over 50 years of experience dating
             back to the 1960s. Murray&apos;s Water Boring is the longest-established family drilling business in the
             area, servicing most areas around Victoria. The company now has over 90 years of combined experience
@@ -106,6 +107,7 @@ const home = () => {
       <ServiceWater
         name="Find Water On Your Property"
         paragraph="If you’re looking to tap into the potential your property has to offer, look no further than D. K. & E.M. Murray Water Boring. Call us today to get started with your drilling project."
+        text='Get Started'
       />
       <Services />
     </>
