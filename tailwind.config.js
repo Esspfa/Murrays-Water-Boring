@@ -9,7 +9,7 @@ module.exports = {
       ...defaultTheme.screens,
     },
     extend: {
-      colors: { darkBlue: '#033A90', darkLight: '#247CCA', Gray: '#666666' },
+      colors: { darkBlue: '#033A90', lightBlue: '#247CCA', Gray: '#666666', borderColor: '#EEEEEE' },
       fontFamily: {
         montserrat: ['Montserrat', ...defaultTheme.fontFamily.sans],
       },

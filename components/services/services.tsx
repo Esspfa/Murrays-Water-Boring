@@ -6,7 +6,7 @@ import ServiceWater from 'components/common/service-water';
 const Services = () => {
   return (
     <div>
-      <div className="bg-darkLight w-full lg:flex">
+      <div className="bg-lightBlue w-full lg:flex">
         <div className="">
           <div className="px-4 sm:text-center justify-center">
             <h1 className="text-white font-black lg:text-5xl font-montserrat ">There For You When You Need Us</h1>
@@ -24,7 +24,7 @@ const Services = () => {
           <div className="ml-2">
             <Image src="/svg/Vector(4).svg" width="10px" height="10px" alt="Vector(4)" />
           </div>
-          <h1 className="ml-5 text-darkLight">Services</h1>
+          <h1 className="ml-5 text-lightBlue">Services</h1>
         </div>
       </div>
       <div>
@@ -61,38 +61,37 @@ const Services = () => {
         alt2="Rectangle3445(3)"
         image2="/img/Rectangle3445(3).png"
       />
-        <div className="drilling flex justify-center items-center ">
-          <div>
-            <img src="/img/Rectangle3445(3).png" alt="Rectangle3445(3)" width="100%"/>
-          </div>
-          <div className=''>
-            <h1 className="text-white font-montserrat font-extrabold ">Exploration and Mining Drilling</h1>
-            <p className="text-Gray font">
-              If you need a reliable mineral exploration boring service come talk to our experts. We have decades of
-              experience with mining drilling and boring.
-            </p>
-          </div>
-        </div>
+      <div className="drilling flex justify-center items-center ">
         <div>
-          <div>
-            <DomesTic 
-            name='Additional Services'
-            paragraph='Provide an angle drilling service.'
-            image1='/img/Rectangle3445a.png'
-            alt1='Rectangle3445a'
-            image2='/img/Rectangle3446d.png'
-            alt2='Rectangle3446d'
-            image3='/img/Rectangle3447s.png'
-            alt3='Rectangle3447s'
-            />
-          </div>
+          <img src="/img/Rectangle3445(3).png" alt="Rectangle3445(3)" width="100%" />
         </div>
-        <ServiceWater
-        name='Get More Information'
-        paragraph='If you have questions about our boring processes or want to find out more about drilling on your property, just give us a call. A member of our team would be happy to schedule an on-site inspection.'
-        text='Schedule and Inspection'
-        />
-        
+        <div className="">
+          <h1 className="text-white font-montserrat font-extrabold ">Exploration and Mining Drilling</h1>
+          <p className="text-Gray font">
+            If you need a reliable mineral exploration boring service come talk to our experts. We have decades of
+            experience with mining drilling and boring.
+          </p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <DomesTic
+            name="Additional Services"
+            paragraph="Provide an angle drilling service."
+            image1="/img/Rectangle3445a.png"
+            alt1="Rectangle3445a"
+            image2="/img/Rectangle3446d.png"
+            alt2="Rectangle3446d"
+            image3="/img/Rectangle3447s.png"
+            alt3="Rectangle3447s"
+          />
+        </div>
+      </div>
+      <ServiceWater
+        name="Get More Information"
+        paragraph="If you have questions about our boring processes or want to find out more about drilling on your property, just give us a call. A member of our team would be happy to schedule an on-site inspection."
+        text="Schedule and Inspection"
+      />
     </div>
   );
 };

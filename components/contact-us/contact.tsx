@@ -4,7 +4,7 @@ import Button from 'components/common/button';
 const contact = () => {
   return (
     <div>
-      <div className="bg-darkLight w-full lg:flex">
+      <div className="bg-lightBlue w-full lg:flex">
         <div className="">
           <div className="px-4 sm:text-center justify-center">
             <h1 className="text-white font-black lg:text-5xl font-montserrat ">EXPERTISE YOU CAN TRUST</h1>
@@ -22,7 +22,7 @@ const contact = () => {
           <div className="ml-2">
             <Image src="/svg/Vector(4).svg" width="10px" height="10px" alt="Vector(4)" />
           </div>
-          <h1 className="ml-5 text-darkLight">Contact Us</h1>
+          <h1 className="ml-5 text-lightBlue">Contact Us</h1>
         </div>
       </div>
       <div className="container mx-auto mt-10">
@@ -33,7 +33,7 @@ const contact = () => {
             by giving us a call today.
           </p>
         </div>
-        <div className='lg:mx-20 sm:mx'>
+        <div className="lg:mx-20 sm:mx">
           <div className="grid lg:grid-cols-3 shadow-lg  px-5 lg:h-40 justify-center items-center">
             <div>
               <h1 className="font-montserrat font-bold ">Find Water</h1>
@@ -41,38 +41,42 @@ const contact = () => {
                 We have decades of experience with drilling water bores. Provide your property with the irrigation it
                 needs by giving us a call today.
               </p>
-            </div >
-            <div className='leading-5 justify-center '>
-              <h1 className="font-montserrat font-bold">Location</h1>
-              <div className='flex  items-center space-x-3 mt-2 '>
-                <h1 className='rounded-full bg-darkLight flex justify-center w-10 h-10'>
-                  <Image src="/svg/Group1214.svg" width="20px" height="20px" alt='Group1216(1)'/>
-                </h1>
-                <h2 className='font-normal text-Gray'>11 Hyde Park Rd, Creswick Victoria, 3363</h2>
-              </div>
-              <div className='flex   items-center space-x-3'>
-                <h1 className='rounded-full bg-darkLight flex justify-center w-10 h-10'>
-                  <Image src="/svg/time.svg" width="20px" height="20px" alt='Group1216(1)'/>
-                </h1>
-                <h2 className='font-normal text-Gray'>Mon - Sun <br/>6:00 am - 9:00 pm</h2>
-              </div>
-              
             </div>
-            <div className='leading-5 justify-center '>
+            <div className="leading-5 justify-center ">
               <h1 className="font-montserrat font-bold">Location</h1>
-              <div className='flex  items-center space-x-3 mt-2 '>
-                <h1 className='rounded-full bg-darkLight flex justify-center w-10 h-10'>
-                  <Image src="/svg/Group1214.svg" width="20px" height="20px" alt='Group1216(1)'/>
+              <div className="flex  items-center space-x-3 mt-2 ">
+                <h1 className="rounded-full bg-darkLight flex justify-center w-10 h-10">
+                  <Image src="/svg/Group1214.svg" width="20px" height="20px" alt="Group1216(1)" />
                 </h1>
-                <h2 className='font-normal text-Gray'>11 Hyde Park Rd, Creswick Victoria, 3363</h2>
+                <h2 className="font-normal text-Gray">11 Hyde Park Rd, Creswick Victoria, 3363</h2>
               </div>
-              <div className='flex   items-center space-x-3'>
-                <h1 className='rounded-full bg-darkLight flex justify-center w-10 h-10'>
-                  <Image src="/svg/time.svg" width="20px" height="20px" alt='Group1216(1)'/>
+              <div className="flex   items-center space-x-3">
+                <h1 className="rounded-full bg-darkLight flex justify-center w-10 h-10">
+                  <Image src="/svg/time.svg" width="20px" height="20px" alt="Group1216(1)" />
                 </h1>
-                <h2 className='font-normal text-Gray'>Mon - Sun <br/>6:00 am - 9:00 pm</h2>
+                <h2 className="font-normal text-Gray">
+                  Mon - Sun <br />
+                  6:00 am - 9:00 pm
+                </h2>
               </div>
-              
+            </div>
+            <div className="leading-5 justify-center ">
+              <h1 className="font-montserrat font-bold">Location</h1>
+              <div className="flex  items-center space-x-3 mt-2 ">
+                <h1 className="rounded-full bg-darkLight flex justify-center w-10 h-10">
+                  <Image src="/svg/Group1214.svg" width="20px" height="20px" alt="Group1216(1)" />
+                </h1>
+                <h2 className="font-normal text-Gray">11 Hyde Park Rd, Creswick Victoria, 3363</h2>
+              </div>
+              <div className="flex   items-center space-x-3">
+                <h1 className="rounded-full bg-darkLight flex justify-center w-10 h-10">
+                  <Image src="/svg/time.svg" width="20px" height="20px" alt="Group1216(1)" />
+                </h1>
+                <h2 className="font-normal text-Gray">
+                  Mon - Sun <br />
+                  6:00 am - 9:00 pm
+                </h2>
+              </div>
             </div>
           </div>
         </div>
