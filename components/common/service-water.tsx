@@ -8,7 +8,7 @@ interface Props {
 const ServiceWater = (props: Props) => {
   const { name, paragraph, text } = props;
   return (
-    <div>
+    <div className='mt-5'>
       <img src="/img/footer-above.png" alt="m" className="w-full z-10" />
       <div className="background flex justify-center lg:-mt-40 md:-mt-32 xs:-mt-10 -mt-8">
         <div className="max-w-xl justify-center  text-center text-white -mt-5">

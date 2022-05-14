@@ -19,18 +19,19 @@ const header = () => {
             <img src="/svg/Group 1166.svg" alt="aa" className="my-3" />
           </li>
         </ul>
-        <nav className="bg-white  border-gray-200 px-2 sm:px-4 py-2.5">
-          <div className="container flex flex-wrap justify-between items-center mx-auto">
+        <nav className="bg-white  border-gray-200 px-2 sm:px-4">
+          <div className="container flex flex-wrap justify-center items-center mx-auto">
             <div className=" justify-between items-center w-full md:flex md:w-auto md:order-1 ">
-              <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 lg:space-x-32 md:mt-0 md:text-sm md:font-medium ">
-                <li className="lg:mx-14 lg:py-5 sm:mx-10">Home</li>
-                <li className="lg:mx-14 lg:py-5 sm:mx-10">Service</li>
-                <li className="lg:mx-14 lg:py-5 sm:mx-10">About us</li>
-                <li className="mx-14">
-                  <img src="/svg/image 2 (1).svg" alt="cc" className="h-20 -mt-4" />
+              <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 lg:space-x-32 md:mt-0 md:text-sm md:font-medium items-center justify-items-center">
+                <li className="">Home</li>
+                <li className="">Service</li>
+                <li className="">About us</li>
+                <li>
+                  <Image src="/svg/image2(1).svg" alt="image2(1)" width={100} height={100}/>
                 </li>
-                <li className="lg:mx-14 lg:py-5 sm:mx-10">FAQS</li>
-                <li className="lg:mx-14 lg:py-5 sm:mx-10">Contact us</li>
+                <li className=" ">Gallery</li>
+                <li className="">FAQS</li>
+                <li className="">Contact us</li>
               </ul>
             </div>
           </div>

@@ -4,7 +4,7 @@ import Button from './button';
 
 const AboutPart = () => {
   return (
-    <div className="flex items-center justify-center flex-wrap">
+    <div className="flex items-center justify-center flex-wrap mt-4">
       <Image src="/img/about.png" alt="about" width="696px" height="500px" />
       <div className="ml-10 max-w-xl">
         <h1 className="text-darkBlue font-extrabold text-3xl font-montserrat mb-2">About Us</h1>

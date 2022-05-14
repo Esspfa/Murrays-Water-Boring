@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 const Drilling = () => {
   return (
-    <div className=" mt-10">
+    <div className="mt-5">
       <img src="/img/water-layer (2).png" alt="textcarsve" className="w-full" />
       <div
         className="flex justify-between -mt-12 h-[525px] z-10"

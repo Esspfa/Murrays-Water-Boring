@@ -61,8 +61,16 @@ const home = () => {
             <div className="flex flex-col h-full justify-center items-end mr-8">
               <div>
                 <h3 className="text-white text-lg leading-7 font-medium mb-2">Call Us Now!</h3>
-                <PhoneNumber />
-                <PhoneNumber />
+                <PhoneNumber 
+                name='03 5345 2175'
+                src1='/svg/phonecall.svg'
+                alt1='phonecall'
+                />
+                <PhoneNumber 
+                name='0428 518 2155'
+                src1='/svg/phonecall.svg'
+                alt1='phonecall'
+                />
               </div>
             </div>
           </div>

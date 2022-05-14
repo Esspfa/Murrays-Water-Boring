@@ -61,11 +61,11 @@ const Contact = [
 ];
 const Footer = () => {
   return (
-    <div className="footer w-full bg-darkBlue pt-5">
+    <div className="footer w-full bg-darkBlue">
       <div className="grid sm:grid-cols-3 md:grid-cols-7 lg:grid-cols-7 text-center pt-24 pb-16 pl-5 pr-5 md:pl-20 md:pr-20">
         <div>
           <div>
-            <img src="/svg/image 2 (1).svg" alt="image 2 (1) sm:w-full " />
+            <img src="/svg/image2(1).svg" alt="image 2 (1) sm:w-full " />
             <h1 className="text-white lg:hidden md:hidden">We Do Not Guarantee The Quality or Quantity of Water</h1>
           </div>
           <hr className="lg:hidden sm:hidden" />
