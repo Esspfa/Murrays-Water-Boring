@@ -46,7 +46,7 @@ const Faqs = () => {
       </div>
       <BreadCrumb />
       <div className="flex justify-center my-14">
-        <div className="lg:mx-52 max-w-5xl w-full">
+        <div className="lg:mx-52 max-w-7xl w-full">
           <h1 className="text-center text-darkBlue font-extrabold font-montserrat text-4xl">FAQ</h1>
           <div className="grid  grid-cols-2 gap-4">
             {findWater.map((data: any, index) => (

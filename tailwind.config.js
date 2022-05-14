@@ -9,11 +9,22 @@ module.exports = {
       ...defaultTheme.screens,
     },
     extend: {
-      colors: { darkBlue: '#033A90', lightBlue: '#247CCA', Gray: '#666666', borderColor: '#EEEEEE',
-    darkGray:'#E5E5E5'
-    },
+      colors: {
+        darkBlue: '#033A90',
+        lightBlue: '#247CCA',
+        Gray: '#666666',
+        borderColor: '#EEEEEE',
+        darkGray: '#E5E5E5',
+        grayShade1: '#FAFAFA',
+      },
       fontFamily: {
         montserrat: ['Montserrat', ...defaultTheme.fontFamily.sans],
+      },
+      maxWidth: {
+        1920: '1920px',
+      },
+      lineHeight: {
+        '70px': '70px',
       },
     },
   },
