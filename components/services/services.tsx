@@ -3,6 +3,7 @@ import Button from 'components/common/button';
 import Image from 'next/image';
 import DomesTic from './domestic';
 import ServiceWater from 'components/common/service-water';
+import BreadCrumb from 'components/common/bread-crumb';
 const Services = () => {
   return (
     <div>
@@ -18,50 +19,35 @@ const Services = () => {
           <img src="/img/Rectangle3 (1).png" alt="s" className="w-full" />
         </div>
       </div>
-      <div className="border border-gray-400">
-        <div className="flex mx-40">
-          <h1>Home</h1>
-          <div className="ml-2">
-            <Image src="/svg/Vector(4).svg" width="10px" height="10px" alt="Vector(4)" />
-          </div>
-          <h1 className="ml-5 text-lightBlue">Services</h1>
-        </div>
-      </div>
+      <BreadCrumb />
       <div>
         <DomesTic
           name="Domestic and Stock Bores"
           paragraph="Get access to groundwater on your property. We offer quality domestic boring services to help you get the water you need."
-          alt1="Rectangle3445"
-          image1="/img/Rectangle3445.png"
-          alt2="Rectangle3446"
-          image2="/img/Rectangle3446.png"
+          images={['/img/Rectangle3445.png', '/img/Rectangle3446.png']}
         />
       </div>
-      <div className="relative">
-        <img src="/img/TheDrillingProcess.png" alt="" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <h1 className="text-white text-center font-montserrat font-extrabold">Large Diameter Irrigation Holes</h1>
-          <p className="text-white font-normal ">
-            Looking to provide your farm or property with an ample amount of groundwater? We offer large diameter
-            irrigation hole drilling to give you access to what you need.
-          </p>
+      <div className="relative md:h-[44rem] h-[55rem] xs:h-[34rem]">
+        <div className="absolute w-full md:h-[44rem] h-[55rem] xs:h-[34rem] -z-10">
+          <Image src="/img/TheDrillingProcess.png" alt="TheDrillingProcess" layout="fill" />
+        </div>
+        <div className="top-0 z-10 md:h-[44rem] h-[55rem] xs:h-[34rem] pt-10">
           <DomesTic
-            image1="/img/Rectangle3445(2).png"
-            alt1="Rectangle3445(2)"
-            image2="/img/Rectangle3446(2).png"
-            alt2="Rectangle3446(2)"
+            name="Large Diameter Irrigation Holes"
+            paragraph={`Looking to provide your farm or property with an ample amount of groundwater? We offer large diameter
+            irrigation hole drilling to give you access to what you need.`}
+            images={['/img/Rectangle3445(2).png', '/img/Rectangle3446(2).png']}
+            nameClasses="!text-white"
+            paragraphClasses="!text-white"
           />
         </div>
       </div>
       <DomesTic
         name="Rotary Mud Drilling"
         paragraph="We offer a full range of mud drilling services to better assist our clientele. If you have mud drilling needs, look to our experts to get you sorted out."
-        alt1="Rectangle3445(3)"
-        image1="/img/Rectangle3445(3).png"
-        alt2="Rectangle3445(3)"
-        image2="/img/Rectangle3445(3).png"
+        images={['/img/Rectangle3445(3).png', '/img/export-drilling.png']}
       />
-      <div className="drilling flex justify-center items-center ">
+      {/* <div className="drilling flex justify-center items-center ">
         <div>
           <img src="/img/Rectangle3445(3).png" alt="Rectangle3445(3)" width="100%" />
         </div>
@@ -72,18 +58,30 @@ const Services = () => {
             experience with mining drilling and boring.
           </p>
         </div>
+      </div> */}
+      <div className="relative md:h-[44rem] h-[55rem] xs:h-[34rem]">
+        <div className="absolute w-full md:h-[44rem] h-[55rem] xs:h-[34rem] -z-10">
+          <Image src="/img/TheDrillingProcess.png" alt="TheDrillingProcess" layout="fill" />
+        </div>
+        <div className="top-0 z-10 md:h-[44rem] h-[55rem] xs:h-[34rem] pt-10">
+          <div className="flex xs:flex-row flex-col-reverse xs:flex-nowrap  justify-center items-center h-full max-w-7xl mx-auto">
+            <Image src="/img/export-drilling.png" alt="image-1" width={696} height={450} />
+            <div className="xs:ml-8 mx-2">
+              <h1 className="font-montserrat font-semibold text-white text-4xl">Exploration and Mining Drilling</h1>
+              <p className="text-white my-8 max-w-sm">
+                If you need a reliable mineral exploration boring service come talk to our experts. We have decades of
+                experience with mining drilling and boring.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div>
         <div>
           <DomesTic
             name="Additional Services"
             paragraph="Provide an angle drilling service."
-            image1="/img/Rectangle3445a.png"
-            alt1="Rectangle3445a"
-            image2="/img/Rectangle3446d.png"
-            alt2="Rectangle3446d"
-            image3="/img/Rectangle3447s.png"
-            alt3="Rectangle3447s"
+            images={['/img/Rectangle3445a.png', '/img/Rectangle3446d.png', '/img/Rectangle3447s.png']}
           />
         </div>
       </div>

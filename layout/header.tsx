@@ -8,16 +8,16 @@ const Header = () => {
   const router = useRouter();
   return (
     <>
-      <div className="bg-darkBlue px-5">
-        <div className="flex space-x-3 mt-2 max-w-7xl mx-auto justify-between">
-          <div className="flex">
-            <Image src="/svg/Group 1162.svg" alt="water-drop" height={20} width={18} />
-            <div className="text-white my-3 ml-3">
-              <span className="lg:text-xl sm:text-sm sm:font-extrabold">No Water - No Charge</span> *Conditions Apply on
-              Stock & Domestic only.
+      <div className="bg-darkBlue px-5 py-2">
+        <div className="md:flex space-x-3 max-w-7xl mx-auto justify-between">
+          <div className="flex flex-wrap justify-center items-center">
+            <div className="flex">
+              <Image src="/svg/Group 1162.svg" alt="water-drop" height={20} width={18} />
+              <p className="md:text-lg text-sm sm:font-extrabold text-white mr-3">No Water - No Charge</p>
             </div>
+            <p className="text-white flex flex-wrap text-xs">*Conditions Apply on Stock & Domestic only.</p>
           </div>
-          <div className="flex space-x-2">
+          <div className="space-x-2 md:flex hidden">
             <NameImage classes="justify-center items-center" />
             <NameImage name="0428 518 159 " classes="justify-center items-center" />
           </div>
@@ -25,7 +25,7 @@ const Header = () => {
       </div>
       <nav className="bg-white mx-8">
         <div className="max-w-7xl w-full mx-auto">
-          <ul className="flex space-x-8 font-medium items-center justify-between">
+          <ul className="space-x-8 font-medium items-center justify-between md:flex hidden">
             {headerItems.slice(0, 3).map((item, index) => (
               <li key={index} className={`${item.path === router.pathname && ' text-lightBlue'}`}>
                 <Link href={item.path} key={index}>
@@ -44,6 +44,11 @@ const Header = () => {
               </li>
             ))}
           </ul>
+          <div className="md:hidden flex justify-between">
+            <Image src="/svg/hamburger.svg" width={22.5} height={15} alt="hamburger" className="cursor-pointer" />
+            <Image src="/svg/image2(1).svg" alt="image2(1)" width={118} height={50} />
+            <NameImage name=" " classes="justify-center items-center" />
+          </div>
         </div>
       </nav>
     </>

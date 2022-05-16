@@ -1,28 +1,29 @@
-import React from 'react'
+import React from 'react';
 import Image from 'next/image';
 interface Props {
-    name?: string;
-    paragraph?: string;
-    image1?:string;
-    alt1?:string;
-    image2?:string;
-    alt2:string;
-    image3?:string;
-    alt3?:string;
-  }
-const DomesTic = (props: Props) => {
-    const {name,paragraph,image1,image2,alt1,alt2,image3,alt3}=props
-  return (
-    <div className='container mx-auto'>
-    <h1 className='text-center text-darkBlue  font-montserrat font-extrabold'>{name}</h1>
-      <p className='text-center text-Gray'>{paragraph}</p>
-    <div className='lg:flex justify-center px-4'>
-      {image1 && <Image src={image1}  alt={alt1}  width={100} height="200px"/>}
-      {image2 &&<Image src={image2}  alt={alt2} width={100} height="200px"/>}
-      {image3 &&<Image src={image3}  alt={alt3} width={100} height="200px"/>}
-    </div>
-    </div>
-  )
+  name?: string;
+  paragraph?: string;
+  images: Array<string>;
+  nameClasses?: string;
+  paragraphClasses?: string;
 }
+const Domestic = (props: Props) => {
+  const { name, paragraph, images, nameClasses, paragraphClasses } = props;
+  return (
+    <div className="max-w-7xl mx-auto my-8 h-full flex justify-center items-center">
+      <div>
+        <h1 className={`text-center text-darkBlue font-montserrat text-4xl font-extrabold ${nameClasses}`}>{name}</h1>
+        <p className={`text-center text-Gray my-5 ${paragraphClasses} max-w-2xl mx-auto`}>{paragraph}</p>
+        <div className="xs:flex justify-center mx-4">
+          {images.map((item, index) => (
+            <div key={index} className="mr-4">
+              <Image src={item} alt="image-1" width={696} height={450} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default DomesTic;
+export default Domestic;
