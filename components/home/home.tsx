@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Drilling from './drilling';
 import Services from './services';
 import Button from 'components/common/button';
-import PhoneNumber from 'components/common/phone-number';
+import NameImage from 'components/common/name-image';
 import InputType from 'components/common/inputtype';
 import ServiceWater from 'components/common/service-water';
 import AboutPart from 'components/common/about-part';
@@ -61,16 +61,8 @@ const home = () => {
             <div className="flex flex-col h-full justify-center items-end mr-8">
               <div>
                 <h3 className="text-white text-lg leading-7 font-medium mb-2">Call Us Now!</h3>
-                <PhoneNumber 
-                name='03 5345 2175'
-                src1='/svg/phonecall.svg'
-                alt1='phonecall'
-                />
-                <PhoneNumber 
-                name='0428 518 2155'
-                src1='/svg/phonecall.svg'
-                alt1='phonecall'
-                />
+                <NameImage name="03 5345 2175" />
+                <NameImage name="0428 518 2155" />
               </div>
             </div>
           </div>

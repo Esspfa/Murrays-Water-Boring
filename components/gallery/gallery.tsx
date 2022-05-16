@@ -1,5 +1,5 @@
 import React from 'react';
-import  Header  from 'components/common/header';
+import Header from 'components/common/header';
 import ServiceWater from 'components/common/service-water';
 import Masonry from 'react-masonry-css';
 import BreadCrumb from 'components/common/bread-crumb';
@@ -16,10 +16,10 @@ const Gallery = () => {
     <div>
       <div>
         <Header
-        heading='There For You When You Need'
-        paragraph='D.K. & E.M. Murray Water Boring Gallery in Victoria'
-        clickme='Find Out More'
-        src='/img/Rectangle31.png'
+          heading="There For You When You Need"
+          paragraph="D.K. & E.M. Murray Water Boring Gallery in Victoria"
+          clickme="Find Out More"
+          src="/img/Rectangle31.png"
         />
       </div>
       <BreadCrumb />
@@ -33,7 +33,7 @@ const Gallery = () => {
         </div>
       </div>
       <div>
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <Masonry breakpointCols={breakpointColumnsObj} className="my-masonry-grid flex" columnClassName="mr-4">
             {galleryData.map((item) => (
               <img src={`/img/gallery/${item}.png`} alt="gallery" key={item} className="m-2" />
