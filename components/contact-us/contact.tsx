@@ -87,7 +87,7 @@ const contact = () => {
             <Image src="/img/map.png" alt="map" layout="fill" />
           </div>
           <div className="z-10">
-            <div className="px-5 justify-center items-center bg-white border border-b-lightBlue border-b-4 w-96 ml-10 mt-10">
+            <div className="px-5 justify-center items-center bg-white border border-b-lightBlue border-b-4 w-96 sm:ml-10 sm:mt-10">
               <>
                 <h1 className="text-center font-bold text-2xl mb-4 mt-5">
                   Contact Us <br />

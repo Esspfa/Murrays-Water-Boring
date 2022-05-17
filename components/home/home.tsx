@@ -7,7 +7,7 @@ import NameImage from 'components/common/name-image';
 import InputType from 'components/common/inputtype';
 import ServiceWater from 'components/common/service-water';
 import AboutPart from 'components/common/about-part';
-const inputtype = [
+const inputType = [
   {
     type: 'text',
     name: 'name',
@@ -33,20 +33,27 @@ const home = () => {
   return (
     <>
       <div className="main bg-lightBlue">
-        <div className="flex flex-wrap justify-between">
-          <div className="ml-32 mt-10">
-            <img src="/svg/image 4 (Traced).svg" alt="jj" className="-ml-20" />
-            <div className="text-6xl  text-white font-bold ">
+        <div className="flex md:flex-nowrap flex-wrap justify-between">
+          <div className="mt-10 md:ml-20 ml-10">
+            <div className="-ml-12 md:hidden block">
+              <Image src="/svg/image 4 (Traced).svg" alt="tag" width={100} height={64} />
+            </div>
+            <div className="-ml-20 md:block hidden">
+              <Image src="/svg/image 4 (Traced).svg" alt="tag" width={168} height={81.2} />
+            </div>
+            <div className="md:text-6xl text-3xl text-white font-bold ">
               <h3>
-                Your Water <br />
+                Your Water <br className="md:block hidden" />
                 Boring <br />
                 Experts
               </h3>
-              <h3 className="mt-4 text-2xl text-white ">Water Boring in Victoria</h3>
+              <h3 className="mt-4 md:text-xl text-base text-white font-normal">Water Boring in Victoria</h3>
             </div>
             <Button classes="bg-darkBlue">Schedule A Free Onsite Inspection</Button>
           </div>
-          <Image src="/img/Group 1168.png" alt="truck" width="800px" height="500px" />
+          <div className="md:h-[30rem] h-[22rem] md:w-2/4 w-full relative md:mt-0 mt-5">
+            <Image src="/img/Group1168.png" alt="truck" layout="fill" />
+          </div>
         </div>
         <div className="main sm:-mt-7 h-32 flex sm:flex-nowrap flex-wrap">
           <div
@@ -62,7 +69,7 @@ const home = () => {
               <div>
                 <h3 className="text-white text-lg leading-7 font-medium mb-2">Call Us Now!</h3>
                 <NameImage name="03 5345 2175" />
-                <NameImage name="0428 518 2155" />
+                <NameImage name="0428 518 2155" classes="mt-2" />
               </div>
             </div>
           </div>
@@ -71,11 +78,9 @@ const home = () => {
               <div className="mt-4">
                 <h1 className="text-black font-bold font-Montserrat ml-5">We Offer Free On-Site Inspections</h1>
               </div>
-              <div className="flex items-center space-x-3 mt-1">
-                {inputtype.map((data: any, index) => (
-                  <div key={index}>
-                    <InputType item={data} />
-                  </div>
+              <div className="flex space-x-3 mt-1">
+                {inputType.map((data: any, index) => (
+                  <InputType item={data} key={index} />
                 ))}
                 <Button>Send</Button>
               </div>

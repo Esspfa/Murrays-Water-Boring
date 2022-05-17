@@ -13,7 +13,10 @@ const breakpointColumnsObj = {
 
 const Gallery = () => {
   const galleryData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+<<<<<<< HEAD
   const [modalShow, setModalShow] = useState(0);
+=======
+>>>>>>> 72bd9772fad606588b08542f2636d7fc55912805
   return (
     <div>
       <div>
