@@ -115,7 +115,7 @@ input ::placeholder {
 }
 .box {
   position: relative;
-  width:40%;
+  width:50%;
   background-color: white;
   margin: 0 auto;
   height: auto;
@@ -129,8 +129,8 @@ input ::placeholder {
   justify-items: center;
   position:fixed;
   cursor: pointer;
-  left: calc(28% - 30px);
-  top: calc(125vh - 85vh - 33px);
+  left: calc(24% - 30px);
+  top: calc(130vh - 85vh - 33px);
   background:white;
   width: 30px;
   height: 30px;
@@ -144,8 +144,8 @@ input ::placeholder {
   justify-items: center;
   position:fixed;
   cursor: pointer;
-  right: calc(28% - 30px);
-  top: calc(125vh - 85vh - 33px);
+  right: calc(24% - 30px);
+  top: calc(130vh - 85vh - 33px);
   background:white;
   width: 30px;
   height: 30px;
@@ -158,7 +158,7 @@ input ::placeholder {
 .close-icon {
   position: fixed;
   cursor: pointer;
-  right: calc(32% - 30px);
+  right: calc(26% - 30px);
   top: calc(101vh - 85vh - 33px);
   background:#212121;
   color: white;

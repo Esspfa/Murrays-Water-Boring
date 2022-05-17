@@ -13,10 +13,9 @@ const breakpointColumnsObj = {
 
 const Gallery = () => {
   const galleryData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
-<<<<<<< HEAD
+
   const [modalShow, setModalShow] = useState(0);
-=======
->>>>>>> 72bd9772fad606588b08542f2636d7fc55912805
+
   return (
     <div>
       <div>
@@ -59,8 +58,8 @@ const Gallery = () => {
         />
       </div>
       {modalShow && (
-        <div className="popup-box" >
-          <div className="box" >
+        <div className="popup-box">
+          <div className="box">
             <div className="close-icon flex items-center justify-center">
               <Image src="/svg/closeBtn.svg" alt="closeBtn" width={10} height={10} onClick={() => setModalShow(0)} />
             </div>
@@ -81,11 +80,11 @@ const Gallery = () => {
               />
             </div>
             <div className="absolute bottom-2">
-              <h1 className=" bg-blackShade text-white ml-5 rounded h-8 w-20 flex items-center justify-center">
-                {1 / 20}
+              <h1 className=" bg-blackShade text-white ml-5 rounded h-8 w-20 flex items-center justify-center font-medium text-xs">
+               {modalShow}/{galleryData.length}
               </h1>
             </div>
-            <div className="flex justify-center h-80 w-1/2 min-w-full">
+            <div className="flex justify-center h-96 w-3/4 min-w-full">
               <img src={`/img/gallery/${modalShow}.png`} alt="1" className="sliderImage" />
             </div>
           </div>
