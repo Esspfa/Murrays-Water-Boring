@@ -55,25 +55,28 @@ const home = () => {
             <Image src="/img/Group1168.png" alt="truck" layout="fill" />
           </div>
         </div>
-        <div className="main sm:-mt-7 h-32 flex sm:flex-nowrap flex-wrap">
-          <div
+        <div className="sm:-mt-7 h-32 flex sm:flex-nowrap flex-wrap">
+          {/* <div
             className="items-center w-96 z-10"
-            style={{
-              background: `url(/img/blue-ribbon.png)`,
-              backgroundSize: '100% 100%, cover',
-              backgroundRepeat: 'no-repeat',
-              // backgroundOrigin: 'content-box',
-            }}
+            // style={{
+            //   background: `url(/img/blue-ribbon.png)`,
+            //   backgroundSize: '100% 100%, cover',
+            //   backgroundRepeat: 'no-repeat',
+            //   // backgroundOrigin: 'content-box',
+            // }}
           >
-            <div className="flex flex-col h-full justify-center items-end mr-8">
+            <div className="absolute h-32 w-80 -z-10">
+              <Image src="/img/blue-ribbon.png" alt="blue-ribbon" layout="fill" />
+            </div>
+            <div className="flex flex-col h-full justify-center items-end mr-8 z-10">
               <div>
                 <h3 className="text-white text-lg leading-7 font-medium mb-2">Call Us Now!</h3>
                 <NameImage name="03 5345 2175" />
                 <NameImage name="0428 518 2155" classes="mt-2" />
               </div>
             </div>
-          </div>
-          <div className="bg-yellow-400 w-full -ml-8">
+          </div> */}
+          <div className="bg-yellow-400 w-full -ml-6">
             <div className="mx-10">
               <div className="mt-4">
                 <h1 className="text-black font-bold font-Montserrat ml-5">We Offer Free On-Site Inspections</h1>

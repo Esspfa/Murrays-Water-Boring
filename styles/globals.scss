@@ -105,3 +105,16 @@ input ::placeholder {
 .contact-box-shadow {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
 }
+
+.carousel-dots {
+  .react-multi-carousel-dot {
+    button {
+      @apply bg-lightBlue border-none opacity-50 w-2 h-2;
+    }
+    &.react-multi-carousel-dot--active {
+      button {
+        @apply bg-darkBlue opacity-100 w-[10px] h-[10px];
+      }
+    }
+  }
+}

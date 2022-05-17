@@ -14,23 +14,19 @@ const Gallery = () => {
   const galleryData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
   return (
     <div>
-      <div>
-        <Header
-          heading="There For You When You Need"
-          paragraph="D.K. & E.M. Murray Water Boring Gallery in Victoria"
-          clickme="Find Out More"
-          src="/img/Rectangle31.png"
-        />
-      </div>
+      <Header
+        heading="There For You When You Need"
+        paragraph="D.K. & E.M. Murray Water Boring Gallery in Victoria"
+        buttonText="Find Out More"
+        src="/img/Rectangle31.png"
+      />
       <BreadCrumb />
-      <div className="mt-5">
-        <div className="lg:px-72">
-          <h1 className="text-center text-darkBlue font-montserrat font-extrabold text-4xl">See Our Work</h1>
-          <p className="text-Gray font-normal text-center">
-            We provide services for drilling water bores, test bores and mineral exploration bores. Feel free to take a
-            look through our gallery to see examples of the quality work we have done for past clients.
-          </p>
-        </div>
+      <div className="max-w-7xl mx-auto mt-5">
+        <h1 className="text-center text-darkBlue font-montserrat font-extrabold text-4xl py-5">See Our Work</h1>
+        <p className="text-Gray font-normal text-center max-w-4xl mx-auto">
+          We provide services for drilling water bores, test bores and mineral exploration bores. Feel free to take a
+          look through our gallery to see examples of the quality work we have done for past clients.
+        </p>
       </div>
       <div>
         <div className="max-w-7xl mx-auto">

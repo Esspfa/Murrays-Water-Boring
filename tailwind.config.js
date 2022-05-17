@@ -23,6 +23,9 @@ module.exports = {
       maxWidth: {
         1920: '1920px',
       },
+      width: {
+        '10px': '10px',
+      },
       lineHeight: {
         '70px': '70px',
       },
