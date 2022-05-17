@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Image from 'next/image';
 import Header from 'components/common/header';
 import ServiceWater from 'components/common/service-water';
 import Masonry from 'react-masonry-css';
@@ -12,6 +13,9 @@ const breakpointColumnsObj = {
 
 const Gallery = () => {
   const galleryData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+  const [modalShow, setModalShow] = useState(0);
+
   return (
     <div>
       <Header
@@ -28,14 +32,19 @@ const Gallery = () => {
           look through our gallery to see examples of the quality work we have done for past clients.
         </p>
       </div>
-      <div>
-        <div className="max-w-7xl mx-auto">
-          <Masonry breakpointCols={breakpointColumnsObj} className="my-masonry-grid flex" columnClassName="mr-4">
-            {galleryData.map((item) => (
-              <img src={`/img/gallery/${item}.png`} alt="gallery" key={item} className="m-2" />
-            ))}
-          </Masonry>
-        </div>
+
+      <div className=" max-w-7xl mx-auto">
+        <Masonry breakpointCols={breakpointColumnsObj} className="my-masonry-grid flex" columnClassName="mr-4">
+          {galleryData.map((item) => (
+            <img
+              src={`/img/gallery/${item}.png`}
+              alt="gallery"
+              key={item}
+              className="m-2 cursor-pointer"
+              onClick={() => setModalShow(item)}
+            />
+          ))}
+        </Masonry>
       </div>
       <div className="mt-5">
         <ServiceWater
@@ -44,6 +53,39 @@ const Gallery = () => {
           text="Call Us Today"
         />
       </div>
+      {modalShow && (
+        <div className="popup-box">
+          <div className="box">
+            <div className="close-icon flex items-center justify-center">
+              <Image src="/svg/closeBtn.svg" alt="closeBtn" width={10} height={10} onClick={() => setModalShow(0)} />
+            </div>
+            <div className="sliderLeft flex justify-center items-center ">
+              <img
+                src="/svg/leftArrow.svg"
+                alt="leftArrow"
+                className="h-3"
+                onClick={() => setModalShow((prev) => (prev === 1 ? 1 : prev - 1))}
+              />
+            </div>
+            <div className="sliderRight flex justify-center items-center">
+              <img
+                src="/svg/rightArrow.svg"
+                alt="rightArrow"
+                className="h-3"
+                onClick={() => galleryData.length !== modalShow && setModalShow((next) => next + 1)}
+              />
+            </div>
+            <div className="absolute bottom-2">
+              <h1 className=" bg-blackShade text-white ml-5 rounded h-8 w-20 flex items-center justify-center font-medium text-xs">
+                {modalShow}/{galleryData.length}
+              </h1>
+            </div>
+            <div className="flex justify-center h-96 w-3/4 min-w-full">
+              <img src={`/img/gallery/${modalShow}.png`} alt="1" className="sliderImage" />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

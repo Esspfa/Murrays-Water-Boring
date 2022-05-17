@@ -16,6 +16,7 @@ module.exports = {
         borderColor: '#EEEEEE',
         darkGray: '#E5E5E5',
         grayShade1: '#FAFAFA',
+        blackShade:'#212121',
       },
       fontFamily: {
         montserrat: ['Montserrat', ...defaultTheme.fontFamily.sans],
