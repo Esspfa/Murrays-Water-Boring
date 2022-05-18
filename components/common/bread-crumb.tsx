@@ -13,7 +13,7 @@ const BreadCrumb = () => {
   ];
   return (
     <ul className="font-normal border border-b-borderColor py-3 leading-6">
-      <div className="max-w-7xl flex mx-auto">
+      <div className="max-w-7xl flex mx-auto  xs:ml-auto ml-5">
         {data.map((item, index) => (
           <li key={index} className={`mx-0.5 flex ${item.active && 'text-lightBlue'}`}>
             <Link href={item.path}>

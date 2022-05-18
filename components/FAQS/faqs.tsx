@@ -3,6 +3,7 @@ import Image from 'next/image';
 import ServiceWater from '../common/service-water';
 import Collapse from './collapse';
 import BreadCrumb from 'components/common/bread-crumb';
+import Header from 'components/common/header';
 
 const findWater = [
   {
@@ -30,20 +31,12 @@ const findWater = [
 const Faqs = () => {
   return (
     <>
-      <div className="flex">
-        <div className="bg-lightBlue w-full flex  lg:items-end">
-          <div className="py-32">
-            <div className="">
-              <h1 className="text-white text-4xl font-bold ">Reliable Services You Can Trust</h1>
-              <h1 className="mt-3 text-white text-lg">Water Boring Questions Victoria</h1>
-              <button className="mt-3 rounded-full bg-darkBlue w-1/3 h-10 text-white">Free Faqs</button>
-            </div>
-          </div>
-          <div className="flex">
-            <img src="/img/Group116.png" alt="s" className="w-full" />
-          </div>
-        </div>
-      </div>
+      <Header
+        heading="Reliable Services You Can Trust"
+        paragraph="Water Boring Questions Victoria"
+        buttonText="Free Faqs"
+        src="/img/Group116.png"
+      />
       <BreadCrumb />
       <div className="flex justify-center my-14">
         <div className="lg:mx-52 max-w-7xl w-full">

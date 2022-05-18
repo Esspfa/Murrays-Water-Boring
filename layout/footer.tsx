@@ -48,10 +48,10 @@ const Footer = () => {
               <Image src="/svg/image2(1).svg" alt="image 2 (1)" width={339} height={143} />
               <h1 className="text-white lg:hidden md:hidden">We Do Not Guarantee The Quality or Quantity of Water</h1>
             </div>
-            <hr className="lg:hidden sm:hidden border-dashed border-gray-500" />
+            <hr className="lg:hidden sm:hidden border-dashed opacity-50" />
           </div>
           <div className="flex items-center">
-            <hr className="border-dashed  rotate-90 w-full hidden sm:block border-gray-500" />
+            <hr className="border-dashed  rotate-90 w-full hidden sm:block opacity-50" />
           </div>
           <div>
             <div className="text-left  pt-5 md:pt-0">
@@ -74,7 +74,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex items-center">
-            <hr className="border-dashed  rotate-90 w-full hidden sm:block border-gray-500" />
+            <hr className="border-dashed rotate-90 w-full hidden sm:block opacity-50" />
           </div>
           <div>
             <div className="text-left  pt-5 md:pt-0">
@@ -102,7 +102,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex items-center">
-            <hr className="border-dashed  rotate-90 w-full hidden sm:block border-gray-500" />
+            <hr className="border-dashed  rotate-90 w-full hidden sm:block opacity-50" />
           </div>
           <div>
             <div className="text-left space-y-4 pt-5 md:pt-0">
@@ -147,15 +147,17 @@ const Footer = () => {
           </div>
         </div>
         <div className="max-w-5xl mx-auto">
-          <hr className="border-dashed  border-gray-500" />
-          <div className="lg:flex text-center">
-            <h1 className="text-borderColor">We Do Not Guarantee The Quality or Quantity of Water</h1>
-            <h1 className="text-borderColor ml-auto">Privacy Policy</h1>
+          <hr className="border-dashed opacity-50" />
+          <div className="lg:flex text-center py-4">
+            <h1 className="text-borderColor text-sm mb-2 xs:mb-0">
+              We Do Not Guarantee The Quality or Quantity of Water
+            </h1>
+            <h1 className="text-borderColor ml-auto text-sm">Privacy Policy</h1>
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center border-t-2 border-white p-6 bg-white">
-        <p className="text-center  ">
+      <div className="flex justify-center items-center border-t-2 border-white p-3 bg-white">
+        <p className="text-center text-sm">
           © 2022 <span className="text-lightBlue">MURRAYS WATER BORING.</span> All rights reserved.
         </p>
       </div>

@@ -35,7 +35,6 @@ const contact = () => {
         buttonText="Contact Us Today"
         src="/img/Rectangle31(2).png"
       />
-
       <BreadCrumb />
       <div className="max-w-7xl w-full mx-auto mt-10">
         <div className="flex flex-col text-center items-center">
@@ -82,41 +81,39 @@ const contact = () => {
       </div>
 
       <>
-        <div className="mt-4 h-[44rem]">
-          <div className="absolute w-full h-[44rem] -z-10">
+        <div className="mt-4 h-44rem">
+          <div className="absolute w-full h-44rem -z-10">
             <Image src="/img/map.png" alt="map" layout="fill" />
           </div>
-          <div className="z-10">
-            <div className="px-5 justify-center items-center bg-white border border-b-lightBlue border-b-4 w-96 sm:ml-10 sm:mt-10">
-              <>
-                <h1 className="text-center font-bold text-2xl mb-4 mt-5">
-                  Contact Us <br />
-                  For A Free Quote
-                </h1>
-                <div className="mx-5 flex justify-center flex-col">
-                  {contactForm.map((item, index) => (
-                    <div key={index} className="items-center relative">
-                      <div className="absolute h-full flex justify-center items-center px-3">
-                        <Image src={item.fontIcon} width={15} height={15} alt="a" className="" />
-                      </div>
-                      <input
-                        type={item.type}
-                        name={item.name}
-                        placeholder={item.placeholder}
-                        className="bg-grayShade1 my-1 w-full rounded border border-borderColor h-8 pl-8 text-xs text-Gray"
-                      />
+          <div className="h-full sm:block flex justify-center items-end">
+            <div className="px-5 justify-center items-center bg-white border border-b-lightBlue border-b-4 w-60 xs:w-80 sm:ml-10 sm:mt-10">
+              <h1 className="text-center font-bold text-2xl mb-4 mt-5">
+                Contact Us <br />
+                For A Free Quote
+              </h1>
+              <div className="mx-5 flex justify-center flex-col">
+                {contactForm.map((item, index) => (
+                  <div key={index} className="items-center relative">
+                    <div className="absolute h-full flex justify-center items-center px-3">
+                      <Image src={item.fontIcon} width={15} height={15} alt="a" className="" />
                     </div>
-                  ))}
-                  <textarea
-                    name="text"
-                    id="s"
-                    cols={30}
-                    rows={5}
-                    className=" bg-grayShade1 border rounded border-borderColor  my-1 placeholder"
-                  ></textarea>
-                  <Button classes="bg-darkBlue text-white font-medium my-5">Send Us Message</Button>
-                </div>
-              </>
+                    <input
+                      type={item.type}
+                      name={item.name}
+                      placeholder={item.placeholder}
+                      className="bg-grayShade1 my-1 w-full rounded border border-borderColor h-8 pl-8 text-xs text-Gray"
+                    />
+                  </div>
+                ))}
+                <textarea
+                  name="text"
+                  id="s"
+                  cols={30}
+                  rows={5}
+                  className=" bg-grayShade1 border rounded border-borderColor  my-1 placeholder"
+                ></textarea>
+                <Button classes="bg-darkBlue text-white font-medium my-5">Send Us Message</Button>
+              </div>
             </div>
           </div>
         </div>

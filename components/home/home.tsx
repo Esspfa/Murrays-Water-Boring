@@ -85,12 +85,12 @@ const home = () => {
       </div>
       <AboutPart />
       <Drilling />
+      <Services />
       <ServiceWater
         name="Find Water On Your Property"
         paragraph="If you’re looking to tap into the potential your property has to offer, look no further than D. K. & E.M. Murray Water Boring. Call us today to get started with your drilling project."
         text="Get Started"
       />
-      <Services />
     </>
   );
 };

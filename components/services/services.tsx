@@ -1,37 +1,30 @@
 import React from 'react';
-import Button from 'components/common/button';
 import Image from 'next/image';
 import DomesTic from './domestic';
 import ServiceWater from 'components/common/service-water';
 import BreadCrumb from 'components/common/bread-crumb';
+import Header from 'components/common/header';
+
 const Services = () => {
   return (
-    <div>
-      <div className="bg-lightBlue w-full lg:flex">
-        <div className="">
-          <div className="px-4 sm:text-center justify-center">
-            <h1 className="text-white font-black lg:text-5xl font-montserrat ">There For You When You Need Us</h1>
-            <h1 className=" text-white text-lg">D.K. & E.M. Murray Water Boring Gallery in Victoria</h1>
-            <Button classes="rounded-full bg-darkBlue  h-10 text-white">For Your Free Onsite Inspection </Button>
-          </div>
-        </div>
-        <div className="">
-          <img src="/img/Rectangle3 (1).png" alt="s" className="w-full" />
-        </div>
-      </div>
+    <>
+      <Header
+        heading="There For You When You Need Us"
+        paragraph="D.K. & E.M. Murray Water Boring Gallery in Victoria"
+        buttonText="For Your Free Onsite Inspection "
+        src="/img/Rectangle3 (1).png"
+      />
       <BreadCrumb />
-      <div>
-        <DomesTic
-          name="Domestic and Stock Bores"
-          paragraph="Get access to groundwater on your property. We offer quality domestic boring services to help you get the water you need."
-          images={['/img/Rectangle3445.png', '/img/Rectangle3446.png']}
-        />
-      </div>
-      <div className="relative md:h-[44rem] h-[55rem] xs:h-[34rem]">
-        <div className="absolute w-full md:h-[44rem] h-[55rem] xs:h-[34rem] -z-10">
+      <DomesTic
+        name="Domestic and Stock Bores"
+        paragraph="Get access to groundwater on your property. We offer quality domestic boring services to help you get the water you need."
+        images={['/img/Rectangle3445.png', '/img/Rectangle3446.png']}
+      />
+      <div className="relative md:h-44rem h-55rem xs:h-34rem">
+        <div className="absolute w-full md:h-44rem h-55rem xs:h-34rem -z-10">
           <Image src="/img/TheDrillingProcess.png" alt="TheDrillingProcess" layout="fill" />
         </div>
-        <div className="top-0 z-10 md:h-[44rem] h-[55rem] xs:h-[34rem] pt-10">
+        <div className="top-0 z-10 md:h-44rem h-55rem xs:h-34rem pt-10">
           <DomesTic
             name="Large Diameter Irrigation Holes"
             paragraph={`Looking to provide your farm or property with an ample amount of groundwater? We offer large diameter
@@ -59,11 +52,11 @@ const Services = () => {
           </p>
         </div>
       </div> */}
-      <div className="relative md:h-[44rem] h-[55rem] xs:h-[34rem]">
-        <div className="absolute w-full md:h-[44rem] h-[55rem] xs:h-[34rem] -z-10">
+      <div className="relative md:h-44rem h-55rem xs:h-34rem">
+        <div className="absolute w-full md:h-44rem h-55rem xs:h-34rem -z-10">
           <Image src="/img/TheDrillingProcess.png" alt="TheDrillingProcess" layout="fill" />
         </div>
-        <div className="top-0 z-10 md:h-[44rem] h-[55rem] xs:h-[34rem] pt-10">
+        <div className="top-0 z-10 md:h-44rem h-55rem xs:h-34rem pt-10">
           <div className="flex xs:flex-row flex-col-reverse xs:flex-nowrap  justify-center items-center h-full max-w-7xl mx-auto">
             <Image src="/img/export-drilling.png" alt="image-1" width={696} height={450} />
             <div className="xs:ml-8 mx-2">
@@ -90,7 +83,7 @@ const Services = () => {
         paragraph="If you have questions about our boring processes or want to find out more about drilling on your property, just give us a call. A member of our team would be happy to schedule an on-site inspection."
         text="Schedule and Inspection"
       />
-    </div>
+    </>
   );
 };
 

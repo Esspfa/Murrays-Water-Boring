@@ -16,7 +16,7 @@ module.exports = {
         borderColor: '#EEEEEE',
         darkGray: '#E5E5E5',
         grayShade1: '#FAFAFA',
-        blackShade:'#212121',
+        blackShade: '#212121',
       },
       fontFamily: {
         montserrat: ['Montserrat', ...defaultTheme.fontFamily.sans],
@@ -29,6 +29,11 @@ module.exports = {
       },
       lineHeight: {
         '70px': '70px',
+      },
+      height: {
+        '44rem': '44rem',
+        '55rem': '55rem',
+        '34rem': '34rem',
       },
     },
   },

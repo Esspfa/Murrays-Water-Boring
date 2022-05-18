@@ -4,21 +4,16 @@ import Image from 'next/image';
 import ServiceWater from 'components/common/service-water';
 import AboutPart from 'components/common/about-part';
 import BreadCrumb from 'components/common/bread-crumb';
+import Header from 'components/common/header';
 const About = () => {
   return (
     <>
-      <div className="bg-lightBlue w-full lg:flex">
-        <div className="">
-          <div className="px-4 sm:text-center justify-center">
-            <h1 className="text-white font-black lg:text-5xl font-montserrat ">There For You When You Need Us</h1>
-            <h1 className=" text-white text-lg">D.K. & E.M. Murray Water Boring Gallery in Victoria</h1>
-            <Button classes="rounded-full bg-darkBlue  h-10 text-white">Find Out More</Button>
-          </div>
-        </div>
-        <div className="">
-          <img src="/img/Rectangle11.png" alt="s" className="w-full" />
-        </div>
-      </div>
+      <Header
+        heading="There For You When You Need Us"
+        paragraph="D.K. & E.M. Murray Water Boring Gallery in Victoria"
+        buttonText="Find Out More"
+        src="/img/Rectangle11.png"
+      />
       <BreadCrumb />
       <AboutPart />
       <ServiceWater
