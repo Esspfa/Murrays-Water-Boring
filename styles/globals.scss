@@ -113,7 +113,9 @@ input ::placeholder {
     }
     &.react-multi-carousel-dot--active {
       button {
-        @apply bg-darkBlue opacity-100 w-[10px] h-[10px];
+        @apply bg-darkBlue opacity-100;
+        width: 10px;
+        height: 10px;
       }
     }
   }

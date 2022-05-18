@@ -8,22 +8,22 @@ import Header from 'components/common/header';
 const findWater = [
   {
     name: 'Will you find water on my property?',
-    paragrp:
+    paragraph:
       'Yes we can. Here at D.K & E.M Murray we take pride in leaving minimal impact whilst on site whilst being environmentally friendly also.',
   },
   {
     name: 'Will you find water on my property?',
-    paragrp:
+    paragraph:
       'Yes we can. Here at D.K & E.M Murray we take pride in leaving minimal impact whilst on site whilst being environmentally friendly also.',
   },
   {
     name: 'Will you find water on my property?',
-    paragrp:
+    paragraph:
       'Yes we can. Here at D.K & E.M Murray we take pride in leaving minimal impact whilst on site whilst being environmentally friendly also.',
   },
   {
     name: 'Will you find water on my property?',
-    paragrp:
+    paragraph:
       'Yes we can. Here at D.K & E.M Murray we take pride in leaving minimal impact whilst on site whilst being environmentally friendly also.',
   },
 ];
@@ -41,7 +41,7 @@ const Faqs = () => {
       <div className="flex justify-center my-14">
         <div className="lg:mx-52 max-w-7xl w-full">
           <h1 className="text-center text-darkBlue font-extrabold font-montserrat text-4xl">FAQ</h1>
-          <div className="grid  grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 sm:mx-0 mx-3">
             {findWater.map((data: any, index) => (
               <div className="w-full mt-3" key={index}>
                 <Collapse item={data} />

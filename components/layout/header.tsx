@@ -9,7 +9,7 @@ const Header = () => {
   const [state, setState] = useState({
     open: false,
   });
-  
+
   const handleDrawer = (name: string, value: boolean) => {
     setState({
       ...state,
@@ -56,7 +56,14 @@ const Header = () => {
             ))}
           </ul>
           <div className="md:hidden flex justify-between">
-            <Image src="/svg/hamburger.svg" width={22.5} height={15} alt="hamburger" className="cursor-pointer" onClick={() => handleDrawer('open', !state.open)}/>
+            <Image
+              src="/svg/hamburger.svg"
+              width={22.5}
+              height={15}
+              alt="hamburger"
+              className="cursor-pointer"
+              onClick={() => handleDrawer('open', !state.open)}
+            />
             <Image src="/svg/image2(1).svg" alt="image2(1)" width={118} height={50} />
             <NameImage name=" " classes="justify-center items-center" />
           </div>
@@ -68,7 +75,7 @@ const Header = () => {
               {headerItems.map((item, index) => (
                 <div key={index} className="border-b border-lightGray">
                   <Link href={item.path}>
-                    <a>
+                    <a onClick={() => handleDrawer('open', false)}>
                       <p className="p-3 text-white font-Raleway">{item.name}</p>
                     </a>
                   </Link>
@@ -83,8 +90,7 @@ const Header = () => {
 };
 
 export default Header;
-export 
-const headerItems = [
+export const headerItems = [
   {
     name: 'Home',
     path: '/',

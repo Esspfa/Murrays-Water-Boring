@@ -4,7 +4,7 @@ import Drilling from './drilling';
 import Services from './services';
 import Button from 'components/common/button';
 import NameImage from 'components/common/name-image';
-import InputType from 'components/common/inputtype';
+import InputType from 'components/common/input-type';
 import ServiceWater from 'components/common/service-water';
 import AboutPart from 'components/common/about-part';
 const inputType = [
@@ -51,7 +51,7 @@ const home = () => {
             </div>
             <Button classes="bg-darkBlue">Schedule A Free Onsite Inspection</Button>
           </div>
-          <div className="md:h-[30rem] h-[22rem] md:w-2/4 w-full relative md:mt-0 mt-5">
+          <div className="md:h-30rem h-22rem md:w-2/4 w-full relative md:mt-0 mt-5">
             <Image src="/img/Group1168.png" alt="truck" layout="fill" />
           </div>
         </div>

@@ -24,6 +24,9 @@ module.exports = {
       maxWidth: {
         1920: '1920px',
       },
+      minWidth: {
+        '1.25rem': '1.25rem',
+      },
       width: {
         '10px': '10px',
       },
@@ -34,6 +37,8 @@ module.exports = {
         '44rem': '44rem',
         '55rem': '55rem',
         '34rem': '34rem',
+        '22rem': '22rem',
+        '30rem': '30rem',
       },
     },
   },

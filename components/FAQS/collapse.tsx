@@ -28,7 +28,7 @@ const Collapse = (props: Props) => {
         </div>
       </div>
       <div className={`drop-down  ${isDown && 'open-faq p-3 '} border border-borderColor rounded-b-md m-0`}>
-        <p className={`text-Gray text-sm`}>{item.paragrp}</p>
+        <p className={`text-Gray text-sm`}>{item.paragraph}</p>
       </div>
     </>
   );

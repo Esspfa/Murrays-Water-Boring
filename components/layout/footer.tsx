@@ -10,10 +10,12 @@ const getTouch = [
   {
     name: '03 5345 2175',
     location: '/svg/phonecall.svg',
+    tel: true,
   },
   {
     name: '03 5345 2175',
     location: '/svg/phonecall.svg',
+    tel: true,
   },
   {
     name: 'Mon - Sun 6:00 am - 9:00 pm',
@@ -39,6 +41,22 @@ const contacts = [
   },
 ];
 const Footer = () => {
+  const ImageNameItem = ({
+    item,
+  }: {
+    item: {
+      name: string;
+      location: string;
+    };
+  }) => (
+    <div className="flex my-2">
+      <div className="flex rounded-full w-5 h-5 min-h-1.25rem min-w-1.25rem p-1 border justify-center  border-white ">
+        <Image src={item.location} width="10px" height="10px" alt={item.name} className="border border-white" />
+      </div>
+      <p className="text-white text-sm leading-4 ml-2">{item.name}</p>
+    </div>
+  );
+
   return (
     <div>
       <div className="footer w-full bg-darkBlue">
@@ -85,18 +103,15 @@ const Footer = () => {
               </Link>
               <div className="flex flex-col pt-5 justify-center">
                 {getTouch.map((item, index) => (
-                  <div key={index} className="flex my-2">
-                    <div className="flex rounded-full w-5 h-5 min-h-[1.25rem] min-w-[1.25rem] p-1 border justify-center  border-white ">
-                      <Image
-                        src={item.location}
-                        width="10px"
-                        height="10px"
-                        alt={item.name}
-                        className="border border-white"
-                      />
-                    </div>
-                    <p className="text-white text-sm leading-4 ml-2">{item.name}</p>
-                  </div>
+                  <>
+                    {item.tel ? (
+                      <a href={`tel:${item.name}`}>
+                        <ImageNameItem item={item} />
+                      </a>
+                    ) : (
+                      <ImageNameItem item={item} />
+                    )}
+                  </>
                 ))}
               </div>
             </div>
@@ -131,7 +146,7 @@ const Footer = () => {
                 {contacts.map((item, index) => (
                   <div
                     key={index}
-                    className="flex rounded-full w-8 h-8 min-h-[1.25rem] min-w-[1.25rem] border justify-center border-white"
+                    className="flex rounded-full w-8 h-8 min-h-1.25rem min-w-1.25rem border justify-center border-white"
                   >
                     <Image
                       src={item.location}

@@ -10,13 +10,25 @@ interface Props {
 
 const NameImage = (props: Props) => {
   const { name, image, nameClasses, classes } = props;
-  return (
+
+  const RenderItem = () => (
     <div className={`flex ${classes}`}>
       <div className="rounded-full flex justify-center bg-lightBlue items-center w-6 h-6 min-h-6 min-w-6 max-h-6 max-w-6">
         <Image src={image || '/svg/phonecall.svg'} alt="phone-call" width={12} height={12} />
       </div>
       <p className={`ml-3 text-white ${nameClasses} text-sm`}>{name || '03 5345 2175'}</p>
     </div>
+  );
+  return (
+    <>
+      {image ? (
+        <RenderItem />
+      ) : (
+        <a href={`tel:${name || '03 5345 2175'}`} className="flex justify-center">
+          <RenderItem />
+        </a>
+      )}
+    </>
   );
 };
 

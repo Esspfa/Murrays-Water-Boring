@@ -15,7 +15,7 @@ const AboutPart = () => {
           three generations from Des to his son, Gary, and two of his grandsons, Josh and Brad, who all work in the
           business with Gary holding a class 3 license which is the highest qualification.
         </p>
-        <p className="text-Gray text-sm font-regular mt-[20px]">
+        <p className="text-Gray text-sm font-regular mt-5">
           If you need water for your garden, stock, irrigation, test holes or mining and exploration drilling, we are
           the people to call. We are founders of the ‘no water, no charge’ offer, which we still offer on domestic and
           stock bores after our free site inspection of your property. We offer reliable service with competitive prices

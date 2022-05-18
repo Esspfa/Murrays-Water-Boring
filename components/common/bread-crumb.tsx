@@ -1,4 +1,4 @@
-import { headerItems } from 'layout/header';
+import { headerItems } from 'components/layout/header';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';

@@ -6,10 +6,9 @@ import Footer from './footer';
 import Header from './header';
 interface Props {
   children: any;
-  transparent?: boolean;
 }
 
-const PrimaryLayout = ({ children, transparent }: Props) => {
+const PrimaryLayout = ({ children }: Props) => {
   const [openCookieDrawer, setOpenCookieDrawer]: [boolean, Function] = useState(false);
   const [openCookieBottom, setOpenCookieBottom]: [boolean, Function] = useState(true);
   return (
@@ -17,13 +16,12 @@ const PrimaryLayout = ({ children, transparent }: Props) => {
       <Head>
         <title>Nextjs</title>
       </Head>
-      <Header transparent={transparent} />
-      
+      <Header />
+
       {children}
       {/* <Footer /> */}
-      <Footer/>
+      <Footer />
     </div>
-    
   );
 };
 
