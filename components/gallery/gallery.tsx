@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Header from 'components/common/header';
 import ServiceWater from 'components/common/service-water';
@@ -13,8 +13,14 @@ const breakpointColumnsObj = {
 
 const Gallery = () => {
   const galleryData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
-
   const [modalShow, setModalShow] = useState(0);
+  useEffect(() => {
+    if (modalShow) {
+      document.getElementsByTagName('body')[0].className = 'overflow-hidden';
+    } else {
+      document.getElementsByTagName('body')[0].className = 'overflow-auto';
+    }
+  }, [modalShow]);
 
   return (
     <div>
@@ -53,39 +59,35 @@ const Gallery = () => {
           text="Call Us Today"
         />
       </div>
-      {modalShow && (
-        <div className="popup-box">
-          <div className="box">
-            <div className="close-icon flex items-center justify-center">
-              <Image src="/svg/closeBtn.svg" alt="closeBtn" width={10} height={10} onClick={() => setModalShow(0)} />
+      {modalShow ? (
+        <div className="popup-box flex justify-center items-center">
+          <div className="box relative">
+            <div className="close-icon flex items-center justify-center z-10" onClick={() => setModalShow(0)}>
+              <Image src="/svg/closeBtn.svg" alt="closeBtn" width={10} height={10} />
             </div>
-            <div className="sliderLeft flex justify-center items-center ">
-              <img
-                src="/svg/leftArrow.svg"
-                alt="leftArrow"
-                className="h-3"
-                onClick={() => setModalShow((prev) => (prev === 1 ? 1 : prev - 1))}
-              />
+            <div
+              className="sliderLeft flex justify-center items-center "
+              onClick={() => setModalShow((prev) => (prev === 1 ? 1 : prev - 1))}
+            >
+              <Image src="/svg/leftArrow.svg" alt="leftArrow" width={10} height={10} />
             </div>
-            <div className="sliderRight flex justify-center items-center">
-              <img
-                src="/svg/rightArrow.svg"
-                alt="rightArrow"
-                className="h-3"
-                onClick={() => galleryData.length !== modalShow && setModalShow((next) => next + 1)}
-              />
+            <div
+              className="sliderRight flex justify-center items-center"
+              onClick={() => galleryData.length !== modalShow && setModalShow((next) => next + 1)}
+            >
+              <Image src="/svg/rightArrow.svg" alt="rightArrow" className="h-3" width={10} height={10} />
             </div>
             <div className="absolute bottom-2">
               <h1 className=" bg-blackShade text-white ml-5 rounded h-8 w-20 flex items-center justify-center font-medium text-xs">
                 {modalShow}/{galleryData.length}
               </h1>
             </div>
-            <div className="flex justify-center h-96 w-3/4 min-w-full">
-              <img src={`/img/gallery/${modalShow}.png`} alt="1" className="sliderImage" />
+            <div className="flex justify-center h-96 w-3/4 min-w-full relative">
+              <Image layout="fill" src={`/img/gallery/${modalShow}.png`} alt="gallery images" className="sliderImage" />
             </div>
           </div>
         </div>
-      )}
+      ) : null}
     </div>
   );
 };

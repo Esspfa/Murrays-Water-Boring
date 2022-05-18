@@ -1,28 +1,7 @@
-import { linkSync } from 'fs';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-
-const footerLinks = [
-  {
-    name: 'Home',
-  },
-  {
-    name: 'Services',
-  },
-  {
-    name: 'About Us',
-  },
-  {
-    name: 'Gellery',
-  },
-  {
-    name: 'FAQs',
-  },
-  {
-    name: 'Contact us',
-  },
-];
+import { headerItems } from './header';
 const getTouch = [
   {
     name: '11 Hyde Park Rd, Creswick Victoria, 3363',
@@ -41,7 +20,7 @@ const getTouch = [
     location: '/svg/time.svg',
   },
 ];
-const Contact = [
+const contacts = [
   {
     name: 'phonecall',
     location: '/svg/phonecall.svg',
@@ -62,39 +41,39 @@ const Contact = [
 const Footer = () => {
   return (
     <div className="footer w-full bg-darkBlue">
-      <div className="grid sm:grid-cols-3 md:grid-cols-7 lg:grid-cols-7 text-center pt-24 pb-16 pl-5 pr-5 md:pl-20 md:pr-20">
+      <div className="grid sm:grid-cols-3 md:grid-cols-7 lg:grid-cols-7 text-center pt-24 pb-16 pl-5 pr-5 md:pl-20 md:pr-20 max-w-7xl mx-auto">
         <div>
           <div>
-            <img src="/svg/image2(1).svg" alt="image 2 (1) sm:w-full " />
+            <Image src="/svg/image2(1).svg" alt="image 2 (1)" width={339} height={143} />
             <h1 className="text-white lg:hidden md:hidden">We Do Not Guarantee The Quality or Quantity of Water</h1>
           </div>
           <hr className="lg:hidden sm:hidden" />
         </div>
         <div className="flex items-center">
-          <hr className="border-dotted  rotate-90 w-full hidden sm:block " />
+          <hr className="border-dashed  rotate-90 w-full hidden sm:block " />
         </div>
         <div>
           <div className="text-left  pt-5 md:pt-0">
             <Link href="/">
               <a>
-                <p className="font-bold text-lg text-white">Get In Touch</p>
+                <p className="font-bold text-lg text-white">Quick Links</p>
               </a>
             </Link>
 
             <div className="pt-5 text-white">
-              {footerLinks.map((item, index) => (
-                <p key={index}>
-                  <a href="#">
-                    <Image src="/svg/arrow.svg" width="20px" height="10px" alt={item.name} />
-                    {item.name}
+              {headerItems.map((item, index) => (
+                <Link key={index} href={item.path}>
+                  <a className="flex my-2">
+                    <Image src="/svg/footer-arrow.svg" width={5} height={5} alt={item.name} />
+                    <p className="text-sm ml-2">{item.name}</p>
                   </a>
-                </p>
+                </Link>
               ))}
             </div>
           </div>
         </div>
         <div className="flex items-center">
-          <hr className="border-dotted  rotate-90 w-full hidden sm:block  " />
+          <hr className="border-dashed rotate-90 w-full hidden sm:block " />
         </div>
         <div>
           <div className="text-left  pt-5 md:pt-0">
@@ -103,28 +82,26 @@ const Footer = () => {
                 <p className="font-bold text-lg text-white">Get In Touch</p>
               </a>
             </Link>
-            <div>
-              <div className="flex flex-col  justify-center">
-                {getTouch.map((item, index) => (
-                  <div key={index} className="flex mt-2">
-                    <div className="flex rounded-full w-5 h-5 min-h-[1.25rem] min-w-[1.25rem]  border justify-center  border-white ">
-                      <Image
-                        src={item.location}
-                        width="10px"
-                        height="10px"
-                        alt={item.name}
-                        className="border border-white"
-                      />
-                    </div>
-                    <h1 className="text-white text-sm leading-4 ml-2 ">{item.name}</h1>
+            <div className="flex flex-col pt-5 justify-center">
+              {getTouch.map((item, index) => (
+                <div key={index} className="flex my-2">
+                  <div className="flex rounded-full w-5 h-5 min-h-[1.25rem] min-w-[1.25rem] p-1 border justify-center  border-white ">
+                    <Image
+                      src={item.location}
+                      width="10px"
+                      height="10px"
+                      alt={item.name}
+                      className="border border-white"
+                    />
                   </div>
-                ))}
-              </div>
+                  <p className="text-white text-sm leading-4 ml-2">{item.name}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
         <div className="flex items-center">
-          <hr className="border-dotted  rotate-90 w-full hidden sm:block " />
+          <hr className="border-dashed rotate-90 w-full hidden sm:block " />
         </div>
         <div>
           <div className="text-left space-y-4 pt-5 md:pt-0">
@@ -150,10 +127,10 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex space-x-2">
-              {Contact.map((item, index) => (
+              {contacts.map((item, index) => (
                 <div
                   key={index}
-                  className="flex rounded-full w-8 h-8 min-h-[1.25rem] min-w-[1.25rem]  border justify-center  border-white"
+                  className="flex rounded-full w-8 h-8 min-h-[1.25rem] min-w-[1.25rem] border justify-center border-white"
                 >
                   <Image
                     src={item.location}

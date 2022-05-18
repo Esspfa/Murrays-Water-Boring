@@ -55,36 +55,28 @@ const home = () => {
             <Image src="/img/Group1168.png" alt="truck" layout="fill" />
           </div>
         </div>
-        <div className="sm:-mt-7 h-32 flex sm:flex-nowrap flex-wrap">
-          {/* <div
-            className="items-center w-96 z-10"
-            // style={{
-            //   background: `url(/img/blue-ribbon.png)`,
-            //   backgroundSize: '100% 100%, cover',
-            //   backgroundRepeat: 'no-repeat',
-            //   // backgroundOrigin: 'content-box',
-            // }}
-          >
-            <div className="absolute h-32 w-80 -z-10">
+        <div className="-mt-7 flex sm:flex-nowrap flex-wrap">
+          <div className="items-center bg-darkBlue w-full sm:w-1/4 py-5 sm:py-0">
+            {/* <div className="absolute w-80 -z-10">
               <Image src="/img/blue-ribbon.png" alt="blue-ribbon" layout="fill" />
-            </div>
-            <div className="flex flex-col h-full justify-center items-end mr-8 z-10">
+            </div> */}
+            <div className="flex flex-col h-full justify-center sm:items-end items-center mr-8 z-10">
               <div>
                 <h3 className="text-white text-lg leading-7 font-medium mb-2">Call Us Now!</h3>
                 <NameImage name="03 5345 2175" />
                 <NameImage name="0428 518 2155" classes="mt-2" />
               </div>
             </div>
-          </div> */}
-          <div className="bg-yellow-400 w-full -ml-6">
-            <div className="mx-10">
-              <div className="mt-4">
-                <h1 className="text-black font-bold font-Montserrat ml-5">We Offer Free On-Site Inspections</h1>
-              </div>
-              <div className="flex space-x-3 mt-1">
-                {inputType.map((data: any, index) => (
-                  <InputType item={data} key={index} />
-                ))}
+          </div>
+          <div className="bg-yellow-400 w-full pb-4">
+            <div className="sm:mx-10 mt-10 sm:mb-0 mx-3">
+              <h1 className="text-black font-bold font-Montserrat">We Offer Free On-Site Inspections</h1>
+              <div className="flex flex-wrap sm:justify-start justify-center items-center">
+                <div className="flex flex-wrap items-center mt-1">
+                  {inputType.map((data: any, index) => (
+                    <InputType item={data} key={index} />
+                  ))}
+                </div>
                 <Button>Send</Button>
               </div>
             </div>
