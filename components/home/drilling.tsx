@@ -2,8 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 const Drilling = () => {
   return (
-    <div className="mt-5">
-      <img src="/img/water-layer (2).png" alt="textcarsve" className="w-full" />
+    <div className="">
+      <img src="/img/water-layer (2).png" alt="textCarsve" className="w-full" />
       <div
         className="flex justify-between -mt-12 h-[525px] z-10"
         style={{
@@ -12,7 +12,7 @@ const Drilling = () => {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <img src="/img/bg-blue-curve.png" alt="textcarsve" className="w-full absolute h-[525px]" />
+        <img src="/img/bg-blue-curve.png" alt="textCarsve" className="w-full absolute h-[525px]" />
         <div className="text-center flex flex-col justify-center items-center  text-white max-w-xl ml-4 z-10">
           <h1 className="text-3xl font-montserrat font-extrabold">The Drilling Process</h1>
           <p className="text-sm font-normal">
