@@ -130,23 +130,23 @@ input ::placeholder {
 }
 .box {
   position: relative;
-  background-color: white;
+  // background-color: white;
   margin: 0 auto;
   height: auto;
 
   border-radius: 4px;
   padding: 4px;
-  border: 1px solid #999;
+  // border: 1px solid #999;
   overflow: auto;
   // margin-top: 15px;
   @apply sm:w-2/4  w-3/4;
 }
 .sliderLeft {
   justify-items: center;
-  position: fixed;
+  position: absolute;
   cursor: pointer;
-  left: calc(24% - 30px);
-  top: calc(53vh - 33px);
+  left: -40%;
+  top: auto;
   background: white;
   width: 30px;
   height: 30px;
@@ -158,10 +158,11 @@ input ::placeholder {
 }
 .sliderRight {
   justify-items: center;
-  position: fixed;
+  position: absolute;
   cursor: pointer;
-  right: calc(24% - 30px);
-  top: calc(53vh - 33px);
+  right: -40%;
+  top: auto;
+  bottom: auto;
   background: white;
   width: 30px;
   height: 30px;

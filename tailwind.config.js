@@ -16,6 +16,7 @@ module.exports = {
         borderColor: '#EEEEEE',
         darkGray: '#E5E5E5',
         grayShade1: '#FAFAFA',
+        grayShade2: '#999',
         blackShade: '#212121',
       },
       fontFamily: {
@@ -29,6 +30,8 @@ module.exports = {
       },
       width: {
         '10px': '10px',
+        '50%': '50%',
+        '65%': '65%',
       },
       lineHeight: {
         '70px': '70px',
@@ -37,6 +40,7 @@ module.exports = {
         '44rem': '44rem',
         '55rem': '55rem',
         '34rem': '34rem',
+        '20rem': '20rem',
         '22rem': '22rem',
         '30rem': '30rem',
       },

@@ -9,20 +9,28 @@ const findWater = [
   {
     name: 'Will you find water on my property?',
     paragraph:
-      'Yes we can. Here at D.K & E.M Murray we take pride in leaving minimal impact whilst on site whilst being environmentally friendly also.',
+      'A general rule of thumb is that there is normally always water under your property. The quantity of water and quality of water does vary across each property. With over 100 years of experience, Murray Drilling has an in-depth knowledge and understanding of the areas we cover. With access to the latest technology, we are able to provide you with the best information regarding finding water on your property.',
   },
   {
-    name: 'Will you find water on my property?',
+    name: 'Do I require a permit?',
+    paragraph: `Yes, all bores require a permit. Head here to apply for yours today. Permit - Click Here`,
+  },
+  {
+    name: 'Are there regular ongoing fees attached to getting a water bore?',
+    paragraph: 'No ongoing fees with Stock or Domestic are incurred. There is only a one-off upfront fee required.',
+  },
+  {
+    name: 'Are water bores only available in certain areas of Victoria?',
     paragraph:
-      'Yes we can. Here at D.K & E.M Murray we take pride in leaving minimal impact whilst on site whilst being environmentally friendly also.',
+      'Water Bores are available all over Victoria no matter if you are metro- or regional-based. Victorians are entitled to a stock or domestic bore.',
   },
   {
-    name: 'Will you find water on my property?',
+    name: 'How do we determine the best location for a bore?',
     paragraph:
-      'Yes we can. Here at D.K & E.M Murray we take pride in leaving minimal impact whilst on site whilst being environmentally friendly also.',
+      'Based on the geology of the land and our combined 100 years of experience we are able to determine the most convenient location to achieve the best outcome for you the client.',
   },
   {
-    name: 'Will you find water on my property?',
+    name: 'Can you access my site during the wetter months?',
     paragraph:
       'Yes we can. Here at D.K & E.M Murray we take pride in leaving minimal impact whilst on site whilst being environmentally friendly also.',
   },

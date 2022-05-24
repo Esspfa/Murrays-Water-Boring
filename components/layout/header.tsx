@@ -45,7 +45,11 @@ const Header = () => {
               </li>
             ))}
             <li className="-mt-6">
-              <Image src="/svg/image2(1).svg" alt="image2(1)" width={200} height={100} />
+              <Link href="/">
+                <a>
+                  <Image src="/svg/image2(1).svg" alt="image2(1)" width={200} height={100} />
+                </a>
+              </Link>
             </li>
             {headerItems.slice(3, 6).map((item, index) => (
               <li key={index} className={`${item.path === router.pathname && ' text-lightBlue'}`}>
@@ -64,7 +68,11 @@ const Header = () => {
               className="cursor-pointer"
               onClick={() => handleDrawer('open', !state.open)}
             />
-            <Image src="/svg/image2(1).svg" alt="image2(1)" width={118} height={50} />
+            <Link href="/">
+              <a>
+                <Image src="/svg/image2(1).svg" alt="image2(1)" width={118} height={50} />
+              </a>
+            </Link>
             <NameImage name=" " classes="justify-center items-center" />
           </div>
           {state.open ? (

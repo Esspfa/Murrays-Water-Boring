@@ -103,7 +103,7 @@ const Footer = () => {
               </Link>
               <div className="flex flex-col pt-5 justify-center">
                 {getTouch.map((item, index) => (
-                  <>
+                  <React.Fragment key={index}>
                     {item.tel ? (
                       <a href={`tel:${item.name}`}>
                         <ImageNameItem item={item} />
@@ -111,7 +111,7 @@ const Footer = () => {
                     ) : (
                       <ImageNameItem item={item} />
                     )}
-                  </>
+                  </React.Fragment>
                 ))}
               </div>
             </div>

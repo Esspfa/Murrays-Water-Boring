@@ -29,21 +29,21 @@ const inputType = [
     placeholder: '*Comment',
   },
 ];
-const home = () => {
+const Home = () => {
   return (
     <>
       <div className="main bg-lightBlue">
         <div className="flex md:flex-nowrap flex-wrap justify-between">
-          <div className="mt-10 md:ml-20 ml-10">
-            <div className="-ml-12 md:hidden block">
+          <div className="max-w-xs md:ml-auto md:mr-0 ml-auto mr-auto my-2 md:mt-10">
+            <div className="-ml-12 lg:hidden block">
               <Image src="/svg/image 4 (Traced).svg" alt="tag" width={100} height={64} />
             </div>
-            <div className="-ml-20 md:block hidden">
+            <div className="-ml-20 lg:block hidden">
               <Image src="/svg/image 4 (Traced).svg" alt="tag" width={168} height={81.2} />
             </div>
-            <div className="md:text-6xl text-3xl text-white font-bold ">
+            <div className="lg:text-6xl md:text-xl text-white font-bold">
               <h3>
-                Your Water <br className="md:block hidden" />
+                Your Water <br className="lg:block hidden" />
                 Boring <br />
                 Experts
               </h3>
@@ -51,15 +51,15 @@ const home = () => {
             </div>
             <Button classes="bg-darkBlue">Schedule A Free Onsite Inspection</Button>
           </div>
-          <div className="md:h-30rem h-22rem md:w-2/4 w-full relative md:mt-0 mt-5">
+          <div className="lg:h-30rem md:h-20rem h-20rem md:block hidden md:w-50% lg:w-65% w-full relative md:mt-0 mt-5">
             <Image src="/img/Group1168.png" alt="truck" layout="fill" />
+          </div>
+          <div className="md:hidden block">
+            <Image src="/img/Group1168.png" alt="truck" width={1045} height={500} />
           </div>
         </div>
         <div className="-mt-7 flex sm:flex-nowrap flex-wrap">
           <div className="items-center bg-darkBlue w-full sm:w-1/4 py-5 sm:py-0">
-            {/* <div className="absolute w-80 -z-10">
-              <Image src="/img/blue-ribbon.png" alt="blue-ribbon" layout="fill" />
-            </div> */}
             <div className="flex flex-col h-full justify-center sm:items-end items-center mr-8 z-10">
               <div>
                 <h3 className="text-white text-lg leading-7 font-medium mb-2">Call Us Now!</h3>
@@ -95,4 +95,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;
