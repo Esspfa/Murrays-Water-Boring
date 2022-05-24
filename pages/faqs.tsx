@@ -1,8 +1,9 @@
+import FAQS from 'components/FAQS';
 import type { NextPage } from 'next';
-import Faqs from 'components/faqs';
+
 
 const HomeManager: NextPage = () => {
-  return <Faqs />;
+  return <FAQS />;
 };
 
 export default HomeManager;
