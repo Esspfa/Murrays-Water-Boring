@@ -33,8 +33,8 @@ const Home = () => {
   return (
     <>
       <div className="main bg-lightBlue">
-        <div className="flex md:flex-nowrap flex-wrap justify-between">
-          <div className="max-w-xs md:ml-auto md:mr-0 ml-auto mr-auto my-2 md:mt-10">
+        <div className="flex md:flex-nowrap flex-wrap justify-between ml-3">
+          <div className="min-w-xs md:ml-auto md:mr-0 ml-auto mr-auto my-2 md:mt-10 mb-8">
             <div className="-ml-12 lg:hidden block">
               <Image src="/svg/image 4 (Traced).svg" alt="tag" width={100} height={64} />
             </div>
@@ -51,12 +51,12 @@ const Home = () => {
             </div>
             <Button classes="bg-darkBlue">Schedule A Free Onsite Inspection</Button>
           </div>
-          <div className="lg:h-30rem md:h-20rem h-20rem md:block hidden md:w-50% lg:w-65% w-full relative md:mt-0 mt-5">
+          {/* <div className="lg:h-30rem md:h-20rem h-20rem md:block hidden md:w-50% lg:w-65% w-full relative md:mt-0 mt-5">
             <Image src="/img/Group1168.png" alt="truck" layout="fill" />
-          </div>
-          <div className="md:hidden block">
-            <Image src="/img/Group1168.png" alt="truck" width={1045} height={500} />
-          </div>
+          </div> */}
+          {/* <div className="md:hidden block"> */}
+          <Image src="/img/Group1168.png" alt="truck" width={1045} height={500} />
+          {/* </div> */}
         </div>
         <div className="-mt-7 flex sm:flex-nowrap flex-wrap">
           <div className="items-center bg-darkBlue w-full sm:w-1/4 py-5 sm:py-0">

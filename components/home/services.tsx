@@ -39,7 +39,7 @@ const Cards = () => {
 
   return (
     <div className="mt-10 mx-5">
-      <h1 className="text-center font-extrabold text-darkBlue text-3xl font-montserrat">
+      <h1 className="text-center font-extrabold text-darkBlue text-46px font-montserrat">
         Some Of Our Services Include..
       </h1>
       <div className="xs:grid hidden md:grid-cols-3 xs:grid-cols-2 grid-cols-1 max-w-7xl mx-auto my-5 gap-5">

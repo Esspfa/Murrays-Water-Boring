@@ -8,12 +8,13 @@ import Header from 'components/common/header';
 const findWater = [
   {
     name: 'Will you find water on my property?',
-    paragraph:
-      'A general rule of thumb is that there is normally always water under your property. The quantity of water and quality of water does vary across each property. With over 100 years of experience, Murray Drilling has an in-depth knowledge and understanding of the areas we cover. With access to the latest technology, we are able to provide you with the best information regarding finding water on your property.',
+    paragraph: `A general rule of thumb is that there is normally always water under your property. The quantity of water and quality of water does 
+    vary across each property. With over 100 years of experience, Murray Drilling has an in-depth knowledge and understanding of the areas we cover. 
+    With access to the latest technology, we are able to provide you with the best information regarding finding water on your property.`,
   },
   {
     name: 'Do I require a permit?',
-    paragraph: `Yes, all bores require a permit. Head here to apply for yours today. Permit - Click Here`,
+    paragraph: `Yes, all bores require a permit. Head here to apply for yours today. Permit - <a href="https://mywater.waterregister.vic.gov.au/" target="_blank">Click Here</a>`,
   },
   {
     name: 'Are there regular ongoing fees attached to getting a water bore?',
@@ -58,7 +59,6 @@ const Faqs = () => {
           </div>
         </div>
       </div>
-
       <ServiceWater
         paragraph="Improve irrigation for livestock or gardening and save money by drilling a water bore on your property. Call us today to schedule an appointment for an on-site inspection. "
         name="Get Started On Accessing Your Underground Water Today"

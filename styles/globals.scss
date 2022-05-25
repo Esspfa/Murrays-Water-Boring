@@ -31,7 +31,7 @@ a {
 }
 
 p {
-  @apply text-base;
+  @apply lg:text-lg xs:text-base text-sm;
 }
 .background {
   background: linear-gradient(

@@ -19,6 +19,9 @@ module.exports = {
         grayShade2: '#999',
         blackShade: '#212121',
       },
+      fontSize: {
+        '46px': '46px',
+      },
       fontFamily: {
         montserrat: ['Montserrat', ...defaultTheme.fontFamily.sans],
       },

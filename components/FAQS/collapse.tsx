@@ -16,7 +16,7 @@ const Collapse = (props: Props) => {
           setIsDown(!isDown);
         }}
       >
-        <h1>{item.name}</h1>
+        <h1 className="text-lg font-medium font-montserrat">{item.name}</h1>
         <div className={`rotate-90 ${isDown && '-rotate-0'} `}>
           <Image
             src={`/svg/${isDown ? 'Group13254.svg' : 'Vector(4).svg'}`}
@@ -28,7 +28,7 @@ const Collapse = (props: Props) => {
         </div>
       </div>
       <div className={`drop-down  ${isDown && 'open-faq p-3 '} border border-borderColor rounded-b-md m-0`}>
-        <p className={`text-Gray text-sm`}>{item.paragraph}</p>
+        <div className={`text-Gray text-base`} dangerouslySetInnerHTML={{ __html: item.paragraph }} />
       </div>
     </>
   );
