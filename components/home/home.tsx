@@ -29,6 +29,7 @@ const inputType = [
     placeholder: '*Comment',
   },
 ];
+
 const Home = () => {
   return (
     <>
