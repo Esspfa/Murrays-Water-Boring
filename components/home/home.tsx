@@ -4,7 +4,6 @@ import Drilling from './drilling';
 import Services from './services';
 import Button from 'components/common/button';
 import NameImage from 'components/common/name-image';
-import InputType from 'components/common/input-type';
 import ServiceWater from 'components/common/service-water';
 import AboutPart from 'components/common/about-part';
 import HomeForm from './form';
