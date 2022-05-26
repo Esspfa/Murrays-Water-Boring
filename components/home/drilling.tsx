@@ -8,9 +8,9 @@ const Drilling = () => {
       </div>
       <div className="bg-darkBlue -mt-2">
         <div className="ml-auto flex md:flex-nowrap flex-wrap-reverse justify-between">
-          <div className="flex flex-col justify-center text-white sm:max-w-sm sm:p-4 lg:max-w-xl z-10 py-3 md:mx-auto mx-2 my-2">
+          <div className="flex flex-col justify-center text-white sm:p-4 sm:max-w-xl z-10 py-3 md:mx-auto mx-2 my-2">
             <h1 className="text-46px font-montserrat font-extrabold">The Drilling Process</h1>
-            <p className="font-normal">
+            <p>
               After arriving at your property for a site inspection, we will discuss your needs and work out where the
               most suitable place for your bore would be. Our drillers assess the area using their knowledge and history
               in drilling and the geological formations of the ground on your property. They will give you an honest

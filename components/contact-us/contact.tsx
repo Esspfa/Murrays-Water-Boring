@@ -5,28 +5,9 @@ import Header from 'components/common/header';
 import NameImage from 'components/common/name-image';
 import ServiceWater from 'components/common/service-water';
 import Button from 'components/common/button';
+import ContactForm from './contact-form';
 
 const contact = () => {
-  const contactForm = [
-    {
-      type: 'text',
-      name: 'name',
-      placeholder: 'Name',
-      fontIcon: '/svg/user.svg',
-    },
-    {
-      type: 'email',
-      name: 'email',
-      placeholder: 'Email address',
-      fontIcon: '/svg/sms.svg',
-    },
-    {
-      type: 'number',
-      name: 'phone',
-      placeholder: 'Phone Number',
-      fontIcon: '/svg/call-calling.svg',
-    },
-  ];
   return (
     <>
       <Header
@@ -91,29 +72,7 @@ const contact = () => {
                 Contact Us <br />
                 For A Free Quote
               </h1>
-              <div className="mx-5 flex justify-center flex-col">
-                {contactForm.map((item, index) => (
-                  <div key={index} className="items-center relative">
-                    <div className="absolute h-full flex justify-center items-center px-3">
-                      <Image src={item.fontIcon} width={15} height={15} alt="a" className="" />
-                    </div>
-                    <input
-                      type={item.type}
-                      name={item.name}
-                      placeholder={item.placeholder}
-                      className="bg-grayShade1 my-1 w-full rounded border border-borderColor h-8 pl-8 text-xs text-Gray"
-                    />
-                  </div>
-                ))}
-                <textarea
-                  name="text"
-                  id="s"
-                  cols={30}
-                  rows={5}
-                  className=" bg-grayShade1 border rounded border-borderColor  my-1 placeholder"
-                ></textarea>
-                <Button classes="bg-darkBlue text-white font-medium my-5">Send Us Message</Button>
-              </div>
+              <ContactForm />
             </div>
           </div>
         </div>

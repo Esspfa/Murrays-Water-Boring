@@ -3,12 +3,13 @@ import React from 'react';
 interface Props {
   children: React.ReactNode;
   classes?: string;
+  onClick?: Function;
 }
 
 const Button = (props: Props) => {
-  const { children, classes } = props;
+  const { children, classes, onClick } = props;
   return (
-    <button className={`bg-lightBlue rounded-full p-2 px-5 text-white text-sm font-light ${classes}`}>
+    <button className={`bg-lightBlue rounded-full p-2 px-5 text-white text-sm font-light ${classes}`} onClick={onClick}>
       {children}
     </button>
   );
