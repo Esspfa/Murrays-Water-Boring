@@ -50,9 +50,15 @@ const ContactForm = () => {
         rows={5}
         className=" bg-grayShade1 border rounded border-borderColor  my-1 placeholder p-1"
       ></textarea>
-      <Button classes="bg-darkBlue text-white font-medium my-5" onClick={() => console.log(state)}>
+      <button 
+        className="bg-darkBlue text-white font-medium my-5 rounded-full p-2 px-5 text-sm"
+        onClick={() => console.log(state)}
+      >
+        Send Us A Message
+      </button>
+      {/* <Button classes="bg-darkBlue text-white font-medium my-5" onClick={() => console.log(state)}>
         Send Us Message
-      </Button>
+      </Button> */}
     </div>
   );
 };

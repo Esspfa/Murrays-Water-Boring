@@ -45,7 +45,13 @@ const HomeForm = () => {
           />
         ))}
       </div>
-      <Button onClick={() => console.log(state)}>Send</Button>
+      <button 
+        className='bg-lightBlue rounded-full p-2 px-5 text-white text-sm font-light'
+        onClick={() => console.log(state)}
+      >
+        Send
+      </button>
+      {/* <Button onClick={() => console.log(state)}>Send</Button> */}
     </>
   );
 };
