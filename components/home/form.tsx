@@ -1,5 +1,4 @@
 import Button from 'components/common/button';
-import InputType from 'components/common/input-type';
 import React, { useState } from 'react';
 const inputType = [
   {
