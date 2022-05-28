@@ -13,7 +13,7 @@ const getTouch = [
     tel: true,
   },
   {
-    name: '03 5345 2175',
+    name: '0428 518 159',
     location: '/svg/phonecall.svg',
     tel: true,
   },
